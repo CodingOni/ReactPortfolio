@@ -5,8 +5,10 @@ import { Link } from "react-router-dom";
 import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
+import Icon from "@material-ui/core/Icon";
 // @material-ui/icons
-
+import AccountCircle from "@material-ui/icons/AccountCircle";
+import Explore from "@material-ui/icons/Explore";
 // core components
 import Header from "components/Header/Header.jsx";
 import Button from "components/CustomButtons/Button.jsx";
@@ -24,7 +26,7 @@ class SectionNavbars extends React.Component {
         color="transparent"
         changeColorOnScroll={{
           height: 400,
-          color: "info"
+          color: "warning"
         }}
         {...rest}
         rightLinks={

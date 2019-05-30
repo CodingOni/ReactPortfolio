@@ -125,20 +125,37 @@ form {
   margin-bottom: 1.125rem;
 }
 
+.RegularButton-transparent-171{
+  color: white !important;
+}
+
 @media (min-width: 960px) {
-  .GridItem-grid-300 {
+.greetingicon {
       flex-grow: 0;
       max-width: 53.333333% !important;
       flex-basis: 33.333333%;
       width: 50% !important;
+      
   }
+  .contactme{
+    align-items: center;
+    background-size: cover;
+    background-image: url(/static/media/sign.cf8b686b.jpg);
+    background-position: top center;
+    border-radius: 30px;
+  
+  }
+  }
+  .contactme{
+   padding-bottom: 0 !important;
+  
   }
 
-  #root > div > div.LandingPage-main-4.LandingPage-mainRaised-5 > div > div.TeamSection-section-319 > div > div > div{
-    width: 100% !important;
-    max-width: 100% !important;
+  // #root > div > div.LandingPage-main-4.LandingPage-mainRaised-5 > div > div.TeamSection-section-319 > div > div > div{
+  //   width: 100% !important;
+  //   max-width: 100% !important;
 
-  }
+  // }
 
   .SectionTabs-section-366 {
      padding:0 0 !important; 
@@ -148,11 +165,12 @@ form {
   .slick-caption{
     display: block !important;
   }
-  .RegularButton-justIcon-166.RegularButton-sm-162{
-    opacity:0.5
+  i.fas{
+    opacity:0.5 !important;
     }
-  .RegularButton-justIcon-166.RegularButton-sm-162:hover{
-opacity:1
+
+    i.fas:hover{
+    opacity:1 !important;
 }
 
   .ProfilePage-navWrapper-18 {
@@ -166,6 +184,13 @@ opacity:1
   text-align: center;
   margin-bottom: 0!important;
 }
+
+.SectionCarousel-section-322,.SectionCarousel-section-592,.SectionCarousel-section-849,.SectionCarousel-section-1106 {
+  padding: 0px 0px !important;
+}
+
+
+
 // Mobile Responsive
 #root > div > div.LandingPage-main-4.LandingPage-mainRaised-5 > div > div.ProductSection-section-301 > div > div > div:nth-child(2) > div > div.InfoArea-iconWrapper-305.InfoArea-success-309.InfoArea-iconWrapperVertical-317 > svg{
   animation:jello-horizontal 2.5s 12s both

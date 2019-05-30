@@ -22,7 +22,7 @@ class ProductSection extends React.Component {
       <div className={classes.section}>
         <div>
           <GridContainer>
-            <GridItem xs={12} sm={12} md={4}>
+            <GridItem className="greetingicon" xs={12} sm={12} md={4}>
               <InfoArea
                 title="Dynamic"
                 description="Websites don't have to be static, I love making pages come to life."
@@ -31,7 +31,7 @@ class ProductSection extends React.Component {
                 vertical
               />
             </GridItem>
-            <GridItem xs={12} sm={12} md={4}>
+            <GridItem className="greetingicon" xs={12} sm={12} md={4}>
               <InfoArea
                 title="Responsive & Intuitive"
                 description="My layouts will work well on all screens big or small and atr intuitive UX/UI making navigation seamless"
@@ -40,7 +40,7 @@ class ProductSection extends React.Component {
                 vertical
               />
             </GridItem>
-            <GridItem xs={12} sm={12} md={4}>
+            <GridItem className="greetingicon" xs={12} sm={12} md={4}>
               <InfoArea
                 title="Optimized"
                 description="Fast load times and lag free interaction are one of the most important things to me."
@@ -49,7 +49,7 @@ class ProductSection extends React.Component {
                 vertical
               />
             </GridItem>
-            <GridItem xs={12} sm={12} md={4}>
+            <GridItem className="greetingicon" xs={12} sm={12} md={4}>
               <InfoArea
                 title="Bug Eliminator"
                 description="Expert in Problem Solving and Computer according to assesment provided by Linked In"

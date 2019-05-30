@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
@@ -11,54 +12,27 @@ import Explore from "@material-ui/icons/Explore";
 // core components
 import Header from "components/Header/Header.jsx";
 import Button from "components/CustomButtons/Button.jsx";
+import SectionExamples from "./SectionExamples.jsx";
 
 import navbarsStyle from "assets/jss/material-kit-react/views/componentsSections/navbarsStyle.jsx";
-
 
 class SectionNavbars extends React.Component {
   render() {
     const { classes, rest } = this.props;
     return (
       <Header
-        brand="Primary Color"
+        brand="Tyrique Daniel"
         fixed
         color="transparent"
         changeColorOnScroll={{
           height: 400,
-          color: "primary"
+          color: "info"
         }}
         {...rest}
         rightLinks={
           <List className={classes.list}>
             <ListItem className={classes.listItem}>
-              <Button
-                href="#pablo"
-                className={classes.navLink + " " + classes.navLinkActive}
-                onClick={e => e.preventDefault()}
-                color="transparent"
-              >
-                <Explore className={classes.icons} /> Pikachu
-              </Button>
-            </ListItem>
-            <ListItem className={classes.listItem}>
-              <Button
-                href="#pablo"
-                className={classes.navLink}
-                onClick={e => e.preventDefault()}
-                color="transparent"
-              >
-                <AccountCircle className={classes.icons} /> Profile
-              </Button>
-            </ListItem>
-            <ListItem className={classes.listItem}>
-              <Button
-                href="#pablo"
-                className={classes.navLink}
-                onClick={e => e.preventDefault()}
-                color="transparent"
-              >
-                <Icon className={classes.icons}>settings</Icon> Settings
-              </Button>
+              <SectionExamples />
             </ListItem>
           </List>
         }

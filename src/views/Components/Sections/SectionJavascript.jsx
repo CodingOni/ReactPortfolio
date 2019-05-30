@@ -205,8 +205,12 @@ class SectionJavascript extends React.Component {
                   this.anchorElTop = node;
                 }}
                 onClick={() => this.handleClickButton("openTop")}
+                color="info"
+                        size="sm"
+                        justIcon
+                        round
               >
-                On top
+                        <i className="fas fa-file" />
               </Button>
               <Popover
                 classes={{

@@ -23,7 +23,7 @@ class SectionExamples extends React.Component {
             className={classes.navLink + " " + classes.navLinkActive}
             color="transparent"
           >
-            <Explore className={classes.icons} /> Home
+            <Explore className={classes.icons} /> <a className="NavLink2">Home</a>
           </Button>
         </Link>
         <Link to="/profile-page" className={classes.link}>
@@ -31,7 +31,7 @@ class SectionExamples extends React.Component {
             className={classes.navLink + " " + classes.navLinkActive}
             color="transparent"
           >
-            <AccountCircle className={classes.icons} /> Profile
+            <AccountCircle className={classes.icons} /> <a className="NavLink2">Profile</a>
           </Button>
         </Link>
       </div>

@@ -105,6 +105,7 @@ class Header extends React.Component {
             variant="temporary"
             anchor={"right"}
             open={this.state.mobileOpen}
+            color= "info"
             classes={{
               paper: classes.drawerPaper
             }}

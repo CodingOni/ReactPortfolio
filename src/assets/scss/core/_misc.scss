@@ -96,12 +96,12 @@ legend {
 }
 
 a {
-  color: $link-color;
+  color: white;
   text-decoration: none;
   background-color: transparent;
   &:hover,
   &:focus {
-    color: darken($link-color, 5%);
+    color: aqua;
     text-decoration: none;
   }
 }
@@ -135,6 +135,14 @@ form {
   padding-left: 0;
 }
 
+.NavLink:hover, ul > li > div > a:nth-child(1) > button >{
+  color: #ff9800 !important
+  
+}
+
+.NavLink2:hover, ul > li > div > a:nth-child(1) > button >{
+  color: #00acc1 !important
+}
 
 
 img:hover{
@@ -248,11 +256,9 @@ img:hover{
   .scontainer{
     margin-left: -22% !important;
   }
-  .SectionTabs-section-366,.SectionTabs-section-572, .SectionTabs-section-452,.SectionTabs-section-360,.SectionTabs-section-568,.SectionTabs-section-763,.SectionTabs-section-958,.SectionTabs-section-1153,.SectionTabs-section-1348,.SectionTabs-section-1543,.SectionTabs-section-1738,.SectionTabs-section-1933,.SectionTabs-section-2128 {
-    
-    margin-left: 35%;
-    background: none;
- }
+  #nav-tabs > div > div{
+    margin-left: 30%;
+  }
   .contactme{
     align-items: center;
     background-size: cover;
@@ -273,16 +279,13 @@ img:hover{
 
   // }
 
-  .SectionTabs-section-366,.SectionTabs-section-360,.SectionTabs-section-568,.SectionTabs-section-763,.SectionTabs-section-958,.SectionTabs-section-1153,.SectionTabs-section-1348,.SectionTabs-section-1543,.SectionTabs-section-1738,.SectionTabs-section-1933,.SectionTabs-section-2128 {
+  .SectionTabs-section-366,.SectionTabs-section-1047,.SectionTabs-section-360,.SectionTabs-section-568,.SectionTabs-section-763,.SectionTabs-section-958,.SectionTabs-section-1153,.SectionTabs-section-1348,.SectionTabs-section-1543,.SectionTabs-section-1738,.SectionTabs-section-1933,.SectionTabs-section-2128 {
      padding:0 0 !important; 
      background: none!important;
      
   }
 
-  ul > li > div > a > button >{
-    color:white !important
-  }
-
+  
   .slick-caption{
     display: block !important;
   }

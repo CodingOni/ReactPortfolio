@@ -17,7 +17,7 @@ class SectionTabs extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.section}>
+      <div >
         <div className={classes.container}>
           <div id="nav-tabs">
             <GridContainer className="scontainer">
@@ -74,10 +74,10 @@ class SectionTabs extends React.Component {
                               className="fas fa-code-branch Skills fa-5x"
                               title="VersionControl"
                             />
-                            <li className="fab  fa-npm Skills fa-5x"
+                            <li
+                              className="fab  fa-npm Skills fa-5x"
                               title="NPM"
-
-                             />
+                            />
                             <li
                               className="fas fa-terminal Skills fa-5x"
                               title="Unix "

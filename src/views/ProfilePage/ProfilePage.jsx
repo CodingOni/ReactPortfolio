@@ -33,17 +33,21 @@ class ProfilePage extends React.Component {
     );
     const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
     return (
-      <div>
+      <div >
         <SectionNavbars />
         <Parallax small filter image={require("assets/img/profile-bg.jpg")} />
-        <div className={classNames(classes.main, classes.mainRaised)}>
+        <div  className={classNames(classes.main, classes.mainRaised)}>
           <div>
             <div className={classes.container}>
-              <GridContainer justify="center">
-                <GridItem xs={12} sm={12} md={6}>
-                  <div className={classes.profile}>
+              <GridContainer >
+                <GridItem  xs={12} sm={12} md={6}>
+                  <div  className={classes.profile}>
                     <div>
-                      <img src={profile} alt="..." className={imageClasses} />
+                      <img
+                        src={profile}
+                        alt="Black Avatar"
+                        className={imageClasses}
+                      />
                     </div>
                     <div className={classes.name}>
                       <h3 className={classes.title}>Tyrique Daniel</h3>
@@ -88,7 +92,6 @@ class ProfilePage extends React.Component {
                       >
                         <i className={"fas fa-database"} />
                       </Button>
-                      
                     </div>
                   </div>
                 </GridItem>
@@ -111,7 +114,7 @@ class ProfilePage extends React.Component {
                   a few years delv into machine learning.
                 </p>
               </div>
-              <GridContainer justify="center">
+              <GridContainer  justify="center">
                 <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
                   <NavPills
                     alignCenter
@@ -122,29 +125,29 @@ class ProfilePage extends React.Component {
                         tabIcon: AssignmentInd,
                         tabContent: (
                           <GridContainer justify="center">
-                            <GridItem xs={12} sm={12} md={4} >
-                            <img
-                                alt="..."
+                            <GridItem xs={12} sm={12} md={4}>
+                              <img
+                                alt="Artificial Intelligence"
                                 src={
-                                  "https://images.unsplash.com/photo-1516110833967-0b5716ca1387?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80"
+                                  "https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325374/Artificial_Intelligence_o3ft8u.jpg"
                                 }
                                 className={navImageClasses}
                               />
                               <img
-                                alt="..."
-                                src="https://images.unsplash.com/photo-1549563316-5384a923453e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+                                alt="Solar Energy"
+                                src="https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325515/SolarEnergy_cwwh86.jpg"
                                 className={navImageClasses}
                               />
                             </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
                               <img
-                                alt="..."
-                                src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80"
+                                alt="3D Printing"
+                                src="https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325546/3dprinting_ssjgla.jpg"
                                 className={navImageClasses}
                               />
                               <img
-                                alt="..."
-                                src="https://images.unsplash.com/photo-1507745512299-8bd0e0b3380f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80"
+                                alt="Save the earth"
+                                src="https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325624/SaveEarth_m8nn1t.jpg"
                                 className={navImageClasses}
                               />
                             </GridItem>
@@ -158,27 +161,27 @@ class ProfilePage extends React.Component {
                           <GridContainer justify="center">
                             <GridItem xs={12} sm={12} md={4}>
                               <img
-                                alt="..."
+                                alt="Working Out"
                                 src={
-                                  "https://images.unsplash.com/photo-1500411215320-ad9acc940360?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1033&q=80"
+                                  "https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325723/WorkingOut_iftzl4.jpg"
                                 }
                                 className={navImageClasses}
                               />
                               <img
-                                alt="..."
-                                src="https://images.unsplash.com/photo-1464207687429-7505649dae38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80"
+                                alt="Festival"
+                                src="https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325726/Festival_gpe5da.jpg"
                                 className={navImageClasses}
                               />
                             </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
                               <img
-                                alt="..."
-                                src="https://images.unsplash.com/photo-1540496905036-5937c10647cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                                alt="LongBoarding"
+                                src="https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325720/LongBoarding_zg7liu.jpg"
                                 className={navImageClasses}
                               />
                               <img
-                                alt="..."
-                                src="https://images.unsplash.com/photo-1469488865564-c2de10f69f96?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                                alt="OutDoors"
+                                src="https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325725/OutDoors_bzhtob.jpg"
                                 className={navImageClasses}
                               />
                             </GridItem>

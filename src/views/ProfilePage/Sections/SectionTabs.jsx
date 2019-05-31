@@ -32,32 +32,32 @@ class SectionTabs extends React.Component {
                         <div>
                           <ul className="padding-left-0">
                             <li
-                              className="fab fa-react fa-js-square Skills fa-5x"
+                              className="fab fa-react fa-js-square Skills fa-3x"
                               title="React.js"
                             />
                             <li
-                              className="fab  fa-js-square Skills fa-5x"
+                              className="fab  fa-js-square Skills fa-3x"
                               title="Javascript"
                             />
 
                             <li
-                              className="fab fa-html5 Skills fa-5x"
+                              className="fab fa-html5 Skills fa-3x"
                               title="HTML5"
                             />
                             <li
-                              className="fab fa-css3 Skills fa-5x"
+                              className="fab fa-css3 Skills fa-3x"
                               title="CSS3"
                             />
                             <li
-                              className="fas fa-bold Skills fa-5x"
+                              className="fas fa-bold Skills fa-3x"
                               title="BootStrap4"
                             />
                             <li
-                              className="fas fa-wheelchair Skills fa-5x"
+                              className="fas fa-wheelchair Skills fa-3x"
                               title="Accessibility"
                             />
                             <li
-                              className="fas fa-server Skills fa-5x"
+                              className="fas fa-server Skills fa-3x"
                               title="API Usage"
                             />
                           </ul>
@@ -71,27 +71,27 @@ class SectionTabs extends React.Component {
                         <div>
                           <ul>
                             <li
-                              className="fas fa-code-branch Skills fa-5x"
+                              className="fas fa-code-branch Skills fa-3x"
                               title="VersionControl"
                             />
                             <li
-                              className="fab  fa-npm Skills fa-5x"
+                              className="fab  fa-npm Skills fa-3x"
                               title="NPM"
                             />
                             <li
-                              className="fas fa-terminal Skills fa-5x"
+                              className="fas fa-terminal Skills fa-3x"
                               title="Unix "
                             />
                             <i
-                              className="fab fa-docker Skills fa-5x"
+                              className="fab fa-docker Skills fa-3x"
                               title="Docker "
                             />
                             <i
-                              className="fab fa-wordpress Skills fa-5x"
+                              className="fab fa-wordpress Skills fa-3x"
                               title="WordPress "
                             />
                             <i
-                              className="fab fa-adobe Skills fa-5x"
+                              className="fab fa-adobe Skills fa-3x"
                               title="Photoshop "
                             />
                           </ul>

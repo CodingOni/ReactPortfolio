@@ -18,7 +18,16 @@ class WorkSection extends React.Component {
     return (
       <div className={classes.section}>
         <GridContainer className="contactme" justify="center">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe7ayyQgu-lZIJtu48Xu5lgKtlJka4yEXVnnMR_tLZOfaxu-Q/viewform?embedded=true" width="640" height="962" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSe7ayyQgu-lZIJtu48Xu5lgKtlJka4yEXVnnMR_tLZOfaxu-Q/viewform?embedded=true"
+            width="640"
+            height="751"
+            frameBorder="0"
+            marginHeight="0"
+            marginWidth="0"
+          >
+            Loading...
+          </iframe>{" "}
         </GridContainer>
       </div>
     );

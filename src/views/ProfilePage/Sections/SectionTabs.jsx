@@ -4,8 +4,8 @@ import React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 
 // @material-ui/icons
-import Face from "@material-ui/icons/Face";
-import Chat from "@material-ui/icons/Chat";
+import DeveloperMode from "@material-ui/icons/DeveloperMode";
+import Backup from "@material-ui/icons/Backup";
 import Build from "@material-ui/icons/Build";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -20,61 +20,82 @@ class SectionTabs extends React.Component {
       <div className={classes.section}>
         <div className={classes.container}>
           <div id="nav-tabs">
-           
-            <GridContainer>
+            <GridContainer className="scontainer">
               <GridItem xs={12} sm={12} md={6}>
-                <h3>
-                  <small>Skills</small>
-                </h3>
                 <CustomTabs
-                  headerColor="primary"
+                  headerColor="warning"
                   tabs={[
                     {
                       tabName: "Front-End",
-                      tabIcon: Face,
+                      tabIcon: DeveloperMode,
                       tabContent: (
-                        <p className={classes.textCenter}>
-                          I think that’s a responsibility that I have, to push
-                          possibilities, to show people, this is the level that
-                          things could be at. So when you get something that has
-                          the name Kanye West on it, it’s supposed to be pushing
-                          the furthest possibilities. I will be the leader of a
-                          company that ends up being worth billions of dollars,
-                          because I got the answers. I understand culture. I am
-                          the nucleus.
-                        </p>
+                        <div>
+                          <ul className="padding-left-0">
+                            <li
+                              className="fab fa-react fa-js-square Skills fa-5x"
+                              title="React.js"
+                            />
+                            <li
+                              className="fab  fa-js-square Skills fa-5x"
+                              title="Javascript"
+                            />
+
+                            <li
+                              className="fab fa-html5 Skills fa-5x"
+                              title="HTML5"
+                            />
+                            <li
+                              className="fab fa-css3 Skills fa-5x"
+                              title="CSS3"
+                            />
+                            <li
+                              className="fas fa-bold Skills fa-5x"
+                              title="BootStrap4"
+                            />
+                            <li
+                              className="fas fa-wheelchair Skills fa-5x"
+                              title="Accessibility"
+                            />
+                            <li
+                              className="fas fa-server Skills fa-5x"
+                              title="API Usage"
+                            />
+                          </ul>
+                        </div>
                       )
                     },
                     {
                       tabName: "Utilities",
-                      tabIcon: Chat,
+                      tabIcon: Backup,
                       tabContent: (
-                        <p className={classes.textCenter}>
-                          I think that’s a responsibility that I have, to push
-                          possibilities, to show people, this is the level that
-                          things could be at. I will be the leader of a company
-                          that ends up being worth billions of dollars, because
-                          I got the answers. I understand culture. I am the
-                          nucleus. I think that’s a responsibility that I have,
-                          to push possibilities, to show people, this is the
-                          level that things could be at.
-                        </p>
-                      )
-                    },
-                    {
-                      tabName: "Settings",
-                      tabIcon: Build,
-                      tabContent: (
-                        <p className={classes.textCenter}>
-                          think that’s a responsibility that I have, to push
-                          possibilities, to show people, this is the level that
-                          things could be at. So when you get something that has
-                          the name Kanye West on it, it’s supposed to be pushing
-                          the furthest possibilities. I will be the leader of a
-                          company that ends up being worth billions of dollars,
-                          because I got the answers. I understand culture. I am
-                          the nucleus.
-                        </p>
+                        <div>
+                          <ul>
+                            <li
+                              className="fas fa-code-branch Skills fa-5x"
+                              title="VersionControl"
+                            />
+                            <li className="fab  fa-npm Skills fa-5x"
+                              title="NPM"
+
+                             />
+                            <li
+                              className="fas fa-terminal Skills fa-5x"
+                              title="Unix "
+                            />
+                            <i
+                              className="fab fa-docker Skills fa-5x"
+                              title="Docker "
+                            />
+                            <i
+                              className="fab fa-wordpress Skills fa-5x"
+                              title="WordPress "
+                            />
+                            <i
+                              className="fab fa-adobe Skills fa-5x"
+                              title="Photoshop "
+                            />
+                          </ul>
+                        </div>
                       )
                     }
                   ]}

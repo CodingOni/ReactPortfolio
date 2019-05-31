@@ -4,7 +4,7 @@ import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
-import Stars from "@material-ui/icons/Stars";
+import AssignmentInd from "@material-ui/icons/AssignmentInd";
 import Rowing from "@material-ui/icons/Rowing";
 import Favorite from "@material-ui/icons/Favorite";
 // core components
@@ -21,17 +21,6 @@ import SectionNavbars from "./Sections/SectionNavbars.jsx";
 
 import profile from "assets/img/faces/christian.jpg";
 
-import studio1 from "assets/img/examples/studio-1.jpg";
-import studio2 from "assets/img/examples/studio-2.jpg";
-import studio3 from "assets/img/examples/studio-3.jpg";
-import studio4 from "assets/img/examples/studio-4.jpg";
-import studio5 from "assets/img/examples/studio-5.jpg";
-import work1 from "assets/img/examples/olu-eletu.jpg";
-import work2 from "assets/img/examples/clem-onojeghuo.jpg";
-import work3 from "assets/img/examples/cynthia-del-rio.jpg";
-import work4 from "assets/img/examples/mariya-georgieva.jpg";
-import work5 from "assets/img/examples/clem-onojegaw.jpg";
-
 import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.jsx";
 
 class ProfilePage extends React.Component {
@@ -45,7 +34,7 @@ class ProfilePage extends React.Component {
     const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
     return (
       <div>
-       <SectionNavbars />
+        <SectionNavbars />
         <Parallax small filter image={require("assets/img/profile-bg.jpg")} />
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div>
@@ -57,17 +46,49 @@ class ProfilePage extends React.Component {
                       <img src={profile} alt="..." className={imageClasses} />
                     </div>
                     <div className={classes.name}>
-                      <h3 className={classes.title}>Christian Louboutin</h3>
-                      <h6>DESIGNER</h6>
-                      <Button justIcon link className={classes.margin5}>
-                        <i className={"fab fa-twitter"} />
+                      <h3 className={classes.title}>Tyrique Daniel</h3>
+                      <h6>Front-End Developer</h6>
+                      <Button
+                        href="https://stackoverflow.com/users/11283278/codingoni"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        justIcon
+                        link
+                        className={classes.margin5}
+                      >
+                        <i className={"fab fa-stack-overflow"} />
                       </Button>
-                      <Button justIcon link className={classes.margin5}>
-                        <i className={"fab fa-instagram"} />
+                      <Button
+                        href="https://www.linkedin.com/in/tyrique-daniel-764586b5/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        justIcon
+                        link
+                        className={classes.margin5}
+                      >
+                        <i className={"fab fa-linkedin"} />
                       </Button>
-                      <Button justIcon link className={classes.margin5}>
-                        <i className={"fab fa-facebook"} />
+                      <Button
+                        href="https://github.com/CodingOni"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        justIcon
+                        link
+                        className={classes.margin5}
+                      >
+                        <i className={"fab fa-github"} />
                       </Button>
+                      <Button
+                        href="https://www.sololearn.com/User/Edit"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        justIcon
+                        link
+                        className={classes.margin5}
+                      >
+                        <i className={"fas fa-database"} />
+                      </Button>
+                      
                     </div>
                   </div>
                 </GridItem>
@@ -80,7 +101,7 @@ class ProfilePage extends React.Component {
                   website. To then creating my own website with basic HTML and
                   CSS in high school. From there I decided to go to college for
                   Computer Science where I studied languages like C++ and
-                  learned how to think like a programmer.{" "}
+                  learned how to think like a programmer.
                   <a href="#pablo">links</a> for people to be able to follow
                   them outside the site. The ability to create things you think
                   of into a real space fascinates me. I love solving problems
@@ -94,14 +115,39 @@ class ProfilePage extends React.Component {
                 <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
                   <NavPills
                     alignCenter
-                    color="primary"
+                    color="warning"
                     tabs={[
                       {
-                        tabButton: "Skills",
-                        tabIcon: Stars,
+                        tabButton: "Interests",
+                        tabIcon: AssignmentInd,
                         tabContent: (
                           <GridContainer justify="center">
-                            <GridItem xs={12} sm={12} md={4} />
+                            <GridItem xs={12} sm={12} md={4} >
+                            <img
+                                alt="..."
+                                src={
+                                  "https://images.unsplash.com/photo-1516110833967-0b5716ca1387?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80"
+                                }
+                                className={navImageClasses}
+                              />
+                              <img
+                                alt="..."
+                                src="https://images.unsplash.com/photo-1549563316-5384a923453e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+                                className={navImageClasses}
+                              />
+                            </GridItem>
+                            <GridItem xs={12} sm={12} md={4}>
+                              <img
+                                alt="..."
+                                src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80"
+                                className={navImageClasses}
+                              />
+                              <img
+                                alt="..."
+                                src="https://images.unsplash.com/photo-1507745512299-8bd0e0b3380f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80"
+                                className={navImageClasses}
+                              />
+                            </GridItem>
                           </GridContainer>
                         )
                       },

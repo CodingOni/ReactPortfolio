@@ -10,6 +10,7 @@ import { List, ListItem, withStyles } from "@material-ui/core";
 import Favorite from "@material-ui/icons/Favorite";
 
 import footerStyle from "assets/jss/material-kit-react/components/footerStyle.jsx";
+import Button from "components/CustomButtons/Button.jsx";
 
 function Footer({ ...props }) {
   const { classes, whiteFont } = props;
@@ -26,55 +27,73 @@ function Footer({ ...props }) {
       <div className={classes.container}>
         <div className={classes.left}>
           <List className={classes.list}>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/"
-                className={classes.block}
-                target="_blank"
-              >
-                Creative Tim
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/presentation"
-                className={classes.block}
-                target="_blank"
-              >
-                About us
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="http://blog.creative-tim.com/"
-                className={classes.block}
-                target="_blank"
-              >
-                Blog
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/license"
-                className={classes.block}
-                target="_blank"
-              >
-                Licenses
-              </a>
-            </ListItem>
+          <Button
+                        href="https://stackoverflow.com/users/11283278/codingoni"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        justIcon
+                        link
+                        className={classes.margin5}
+                      >
+                        <i className={"fab fa-stack-overflow"} />
+                      </Button>
+                      <Button
+                        href="https://www.linkedin.com/in/tyrique-daniel-764586b5/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        justIcon
+                        link
+                        className={classes.margin5}
+                      >
+                        <i className={"fab fa-linkedin"} />
+                      </Button>
+                      <Button
+                        href="https://github.com/CodingOni"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        justIcon
+                        link
+                        className={classes.margin5}
+                      >
+                        <i className={"fab fa-github"} />
+                      </Button>
+                      <Button
+                        href="https://www.sololearn.com/User/Edit"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        justIcon
+                        link
+                        className={classes.margin5}
+                      >
+                        <i className={"fas fa-database"} />
+                      </Button>
           </List>
         </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
-          <Favorite className={classes.icon} /> by{" "}
-          <a
-            href="https://www.creative-tim.com"
-            className={aClasses}
-            target="_blank"
-          >
-            Creative Tim
-          </a>{" "}
-          for a better web.
+          &copy; {1900 + new Date().getYear()} View this sites code
+          <Button
+                        color= "info"
+                        href="https://www.sololearn.com/User/Edit"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        justIcon
+                        link
+                        className={classes.margin5}
+                      >
+                        <i className="fas fa-code" />
+                      </Button>
+                      <Button
+                        color= "info"
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=tyriquedaniel14@gmail.com,tyrique1.daniel@gmail.com&su=Programming-Inquiry&body=BODY"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        justIcon
+                        link
+                        className={classes.margin5}
+                      >
+                        <i className="fas fa-envelope-square" />
+                      </Button>
+         
         </div>
       </div>
     </footer>

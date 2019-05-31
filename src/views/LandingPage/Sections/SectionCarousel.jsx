@@ -57,10 +57,10 @@ class SectionCarousel extends React.Component {
       slidesToScroll: 1,
       autoplay: false
     };
-    
+
     return (
       <div className={classes.section}>
-        <div className={classes.container} >
+        <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={8} className={classes.marginAuto}>
               <Card carousel>
@@ -95,40 +95,47 @@ class SectionCarousel extends React.Component {
                         <i className="fas fa-eye" />
                       </Button>
                       <Button
-                buttonRef={node => {
-                  this.anchorElTop = node;
-                }}
-                onClick={() => this.handleClickButton("openTop")}
-                color="info"
-                size="sm"
-                justIcon
-                round
-                
-              />
-                                      
-
-              <Popover
-                classes={{
-                  paper: classes.popover
-                }}
-                open={this.state.openTop}
-                anchorEl={this.anchorElTop}
-                anchorReference={"anchorEl"}
-                onClose={() => this.handleClosePopover("openTop")}
-                anchorOrigin={{
-                  vertical: "top",
-                  horizontal: "center"
-                }}
-                transformOrigin={{
-                  vertical: "bottom",
-                  horizontal: "center"
-                }}
-              >
-                <h3 className={classes.popoverHeader}>Popover on top</h3>
-                <div className={classes.popoverBody}>
-                  Here will be some very useful information about his popover.
-                </div>
-              </Popover>
+                        buttonRef={node => {
+                          this.anchorElTop = node;
+                        }}
+                        onClick={() => this.handleClickButton("openTop")}
+                        color="info"
+                        size="sm"
+                        justIcon
+                        round
+                      >
+                        <i className="fas fa-file" />
+                      </Button>
+                      <Popover
+                        classes={{
+                          paper: classes.popover
+                        }}
+                        open={this.state.openTop}
+                        anchorEl={this.anchorElTop}
+                        anchorReference={"anchorEl"}
+                        onClose={() => this.handleClosePopover("openTop")}
+                        anchorOrigin={{
+                          vertical: "top",
+                          horizontal: "center"
+                        }}
+                        transformOrigin={{
+                          vertical: "bottom",
+                          horizontal: "center"
+                        }}
+                      >
+                        <h3 className={classes.popoverHeader}>
+                          Popover on top
+                        </h3>
+                        <div className={classes.popoverBody}>
+                          I noticed this website needed a rehaul. So we
+                          implement some new designs and update the overall
+                          overall feel of the site.I Gave it a more light and
+                          interactive feel. And catered to the clients needs to
+                          the teeth. This required alot of using the same
+                          components so i think the next time i do a blog like
+                          website i will use React.
+                        </div>
+                      </Popover>
                     </div>
                   </div>
                   <div>
@@ -150,39 +157,52 @@ class SectionCarousel extends React.Component {
                         <i className="fas fa-code" />
                       </Button>
                       <Button
-                buttonRef={node => {
-                  this.anchorElTop = node;
-                }}
-                onClick={() => this.handleClickButton("openTop")}
-                color="info"
+                        color="info"
                         size="sm"
                         justIcon
                         round
-              >
+                        href="https://codingoni.github.io/2uper/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="fas fa-eye" />
+                      </Button>
+                      <Button
+                        buttonRef={node => {
+                          this.anchorElTop = node;
+                        }}
+                        onClick={() => this.handleClickButton("openTop")}
+                        color="info"
+                        size="sm"
+                        justIcon
+                        round
+                      >
                         <i className="fas fa-file" />
-              </Button>
-              <Popover
-                classes={{
-                  paper: classes.popover
-                }}
-                open={this.state.openTop}
-                anchorEl={this.anchorElTop}
-                anchorReference={"anchorEl"}
-                onClose={() => this.handleClosePopover("openTop")}
-                anchorOrigin={{
-                  vertical: "top",
-                  horizontal: "center"
-                }}
-                transformOrigin={{
-                  vertical: "bottom",
-                  horizontal: "center"
-                }}
-              >
-                <h3 className={classes.popoverHeader}>Popover on top</h3>
-                <div className={classes.popoverBody}>
-                  Here will be some very useful information about his popover.
-                </div>
-              </Popover>
+                      </Button>
+                      <Popover
+                        classes={{
+                          paper: classes.popover
+                        }}
+                        open={this.state.openTop}
+                        anchorEl={this.anchorElTop}
+                        anchorReference={"anchorEl"}
+                        onClose={() => this.handleClosePopover("openTop")}
+                        anchorOrigin={{
+                          vertical: "top",
+                          horizontal: "center"
+                        }}
+                        transformOrigin={{
+                          vertical: "bottom",
+                          horizontal: "center"
+                        }}
+                      >
+                        <h3 className={classes.popoverHeader}>
+                          Ash
+                        </h3>
+                        <div className={classes.popoverBody}>
+                         Pikachu
+                        </div>
+                      </Popover>
                     </div>
                   </div>
 
@@ -216,16 +236,41 @@ class SectionCarousel extends React.Component {
                         <i className="fas fa-eye" />
                       </Button>
                       <Button
+                        buttonRef={node => {
+                          this.anchorElTop = node;
+                        }}
+                        onClick={() => this.handleClickButton("openTop")}
                         color="info"
                         size="sm"
                         justIcon
                         round
-                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                        target="_blank"
-                        rel="noopener noreferrer"
                       >
                         <i className="fas fa-file" />
                       </Button>
+                      <Popover
+                        classes={{
+                          paper: classes.popover
+                        }}
+                        open={this.state.openTop}
+                        anchorEl={this.anchorElTop}
+                        anchorReference={"anchorEl"}
+                        onClose={() => this.handleClosePopover("openTop")}
+                        anchorOrigin={{
+                          vertical: "top",
+                          horizontal: "center"
+                        }}
+                        transformOrigin={{
+                          vertical: "bottom",
+                          horizontal: "center"
+                        }}
+                      >
+                        <h3 className={classes.popoverHeader}>
+                          Ash
+                        </h3>
+                        <div className={classes.popoverBody}>
+                          Pikachu
+                        </div>
+                      </Popover>
                     </div>
                   </div>
                   <div>
@@ -240,7 +285,8 @@ class SectionCarousel extends React.Component {
                         size="sm"
                         justIcon
                         round
-                        href="https://github.com/CodingOni/Catharsis-LLC"                        target="_blank"
+                        href="https://github.com/CodingOni/Catharsis-LLC"
+                        target="_blank"
                         rel="noopener noreferrer"
                       >
                         <i className="fas fa-code" />
@@ -257,16 +303,41 @@ class SectionCarousel extends React.Component {
                         <i className="fas fa-eye" />
                       </Button>
                       <Button
+                        buttonRef={node => {
+                          this.anchorElTop = node;
+                        }}
+                        onClick={() => this.handleClickButton("openTop")}
                         color="info"
                         size="sm"
                         justIcon
                         round
-                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                        target="_blank"
-                        rel="noopener noreferrer"
                       >
                         <i className="fas fa-file" />
                       </Button>
+                      <Popover
+                        classes={{
+                          paper: classes.popover
+                        }}
+                        open={this.state.openTop}
+                        anchorEl={this.anchorElTop}
+                        anchorReference={"anchorEl"}
+                        onClose={() => this.handleClosePopover("openTop")}
+                        anchorOrigin={{
+                          vertical: "top",
+                          horizontal: "center"
+                        }}
+                        transformOrigin={{
+                          vertical: "bottom",
+                          horizontal: "center"
+                        }}
+                      >
+                        <h3 className={classes.popoverHeader}>
+                          Ash
+                        </h3>
+                        <div className={classes.popoverBody}>
+                         Pikachu
+                        </div>
+                      </Popover>
                     </div>
                   </div>
                   <div>
@@ -299,17 +370,39 @@ class SectionCarousel extends React.Component {
                         <i className="fas fa-eye" />
                       </Button>
                       <Button
-                        className="fadein"
+                        buttonRef={node => {
+                          this.anchorElTop = node;
+                        }}
+                        onClick={() => this.handleClickButton("openTop")}
                         color="info"
                         size="sm"
                         justIcon
                         round
-                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                        target="_blank"
-                        rel="noopener noreferrer"
                       >
                         <i className="fas fa-file" />
                       </Button>
+                      <Popover
+                        classes={{
+                          paper: classes.popover
+                        }}
+                        open={this.state.openTop}
+                        anchorEl={this.anchorElTop}
+                        anchorReference={"anchorEl"}
+                        onClose={() => this.handleClosePopover("openTop")}
+                        anchorOrigin={{
+                          vertical: "top",
+                          horizontal: "center"
+                        }}
+                        transformOrigin={{
+                          vertical: "bottom",
+                          horizontal: "center"
+                        }}
+                      >
+                        <h3 className={classes.popoverHeader}>
+                          Popover on top
+                        </h3>
+                        <div className={classes.popoverBody}>Pikachu</div>
+                      </Popover>
                     </div>
                   </div>
                   <div>
@@ -342,16 +435,42 @@ class SectionCarousel extends React.Component {
                         <i className="fas fa-eye" />
                       </Button>
                       <Button
+                        buttonRef={node => {
+                          this.anchorElTop = node;
+                        }}
+                        onClick={() => this.handleClickButton("openTop")}
                         color="info"
                         size="sm"
                         justIcon
                         round
-                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                        target="_blank"
-                        rel="noopener noreferrer"
                       >
                         <i className="fas fa-file" />
                       </Button>
+                      <Popover
+                        classes={{
+                          paper: classes.popover
+                        }}
+                        open={this.state.openTop}
+                        anchorEl={this.anchorElTop}
+                        anchorReference={"anchorEl"}
+                        onClose={() => this.handleClosePopover("openTop")}
+                        anchorOrigin={{
+                          vertical: "top",
+                          horizontal: "center"
+                        }}
+                        transformOrigin={{
+                          vertical: "bottom",
+                          horizontal: "center"
+                        }}
+                      >
+                        <h3 className={classes.popoverHeader}>
+                          Popover on top
+                        </h3>
+                        <div className={classes.popoverBody}>
+                          Pikachu
+                          Pikachu
+                        </div>
+                      </Popover>
                     </div>
                   </div>
                 </Carousel>

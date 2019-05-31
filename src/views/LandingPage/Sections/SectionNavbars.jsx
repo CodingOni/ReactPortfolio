@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
@@ -9,7 +8,6 @@ import ListItem from "@material-ui/core/ListItem";
 
 // core components
 import Header from "components/Header/Header.jsx";
-import Button from "components/CustomButtons/Button.jsx";
 import SectionExamples from "./SectionExamples.jsx";
 
 import navbarsStyle from "assets/jss/material-kit-react/views/componentsSections/navbarsStyle.jsx";

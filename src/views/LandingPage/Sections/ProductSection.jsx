@@ -62,7 +62,7 @@ class ProductSection extends React.Component {
             <GridItem className="greetingicon Bug" xs={12} sm={12} md={4}>
               <InfoArea
                 title="Bug Eliminator"
-                description="Expert in Problem Solving and Computer according to assesment provided by Linked In"
+                description="Expert in Problem Solving and Computer Knowledge according to assesment provided by Linked In"
                 icon={BugReport}
                 iconColor="danger"
                 vertical

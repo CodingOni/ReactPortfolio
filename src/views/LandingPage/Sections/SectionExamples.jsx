@@ -8,8 +8,6 @@ import Explore from "@material-ui/icons/Explore";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 
 // core components
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import exampleStyle from "assets/jss/material-kit-react/views/componentsSections/exampleStyle.jsx";
 
@@ -23,7 +21,7 @@ class SectionExamples extends React.Component {
             className={classes.navLink + " " + classes.navLinkActive}
             color="transparent"
           >
-            <Explore className={classes.icons} /> <a className="NavLink">Home</a>
+            <Explore className={classes.icons} /> <li className="NavLink2">Home</li>
           </Button>
         </Link>
         <Link to="/profile-page" className={classes.link}>
@@ -31,7 +29,7 @@ class SectionExamples extends React.Component {
             className={classes.navLink + " " + classes.navLinkActive}
             color="transparent"
           >
-            <AccountCircle className={classes.icons} /> <a className="NavLink">Profile</a>
+            <AccountCircle className={classes.icons} /> <li className="NavLink2">Profile</li>
           </Button>
         </Link>
       </div>

@@ -8,8 +8,6 @@ import Explore from "@material-ui/icons/Explore";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 
 // core components
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import exampleStyle from "assets/jss/material-kit-react/views/componentsSections/exampleStyle.jsx";
 

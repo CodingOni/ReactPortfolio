@@ -34,6 +34,8 @@ function Footer({ ...props }) {
                         justIcon
                         link
                         className={classes.margin5}
+                        title="StackOverflow"
+                        alt="StackOverflow"
                       >
                         <i className={"fab fa-stack-overflow"} />
                       </Button>
@@ -44,6 +46,8 @@ function Footer({ ...props }) {
                         justIcon
                         link
                         className={classes.margin5}
+                        title="LinkedIn"
+                        alt="LinkedIn"
                       >
                         <i className={"fab fa-linkedin"} />
                       </Button>
@@ -54,6 +58,8 @@ function Footer({ ...props }) {
                         justIcon
                         link
                         className={classes.margin5}
+                        title="GitHub"
+                        alt="GitHub"
                       >
                         <i className={"fab fa-github"} />
                       </Button>
@@ -64,13 +70,15 @@ function Footer({ ...props }) {
                         justIcon
                         link
                         className={classes.margin5}
+                        title="SoloLearn"
+                        alt="SoloLearn"
                       >
                         <i className={"fas fa-database"} />
                       </Button>
           </List>
         </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} View this sites code
+          &copy; {1900 + new Date().getYear()} CodingOni
           <Button
                         color= "info"
                         href="https://www.sololearn.com/User/Edit"
@@ -79,6 +87,8 @@ function Footer({ ...props }) {
                         justIcon
                         link
                         className={classes.margin5}
+                        title="View This Sites Code"
+                        alt="View This Sites Code"
                       >
                         <i className="fas fa-code" />
                       </Button>
@@ -90,6 +100,8 @@ function Footer({ ...props }) {
                         justIcon
                         link
                         className={classes.margin5}
+                        title="Email me"
+                        alt="Email Me"
                       >
                         <i className="fas fa-envelope-square" />
                       </Button>

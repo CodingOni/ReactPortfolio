@@ -103,7 +103,7 @@ a {
   background-color: transparent;
   &:hover,
   &:focus {
-    color: aqua;
+    color: white;
     text-decoration: none;
   }
 }
@@ -137,12 +137,12 @@ form {
   padding-left: 0;
 }
 
-.NavLink:hover, ul > li > div > a:nth-child(1) > button >{
+li .NavLink3:hover{
   color: #ff9800 !important
   
 }
 
-.NavLink2:hover, ul > li > div > a:nth-child(1) > button >{
+li .NavLink2:hover{
   color: #00acc1 !important
 }
 
@@ -153,11 +153,11 @@ img:hover{
   opacity: 0.5;
 }
 
-.GridContainer-grid-218{
+.GridContainer-grid-218,.GridContainer-grid-205{
   margin-left: 0!important;
   margin-right: 0!important;
 }
-.ProfilePage-profile-2 img,.ProfilePage-profile-2 img:hover{
+.ProfilePage-profile-2:hover img{
   animation: none !important;
 }
 // Skills Colors
@@ -258,9 +258,7 @@ img:hover{
 
 }
 
-.quantumWizButtonPaperbuttonFocusOverlay{
- background-color:#00acc1 !important;
-}
+
 
 
 // Mobile Responsive

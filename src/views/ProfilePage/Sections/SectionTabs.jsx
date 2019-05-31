@@ -6,7 +6,6 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 import DeveloperMode from "@material-ui/icons/DeveloperMode";
 import Backup from "@material-ui/icons/Backup";
-import Build from "@material-ui/icons/Build";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
@@ -26,7 +25,7 @@ class SectionTabs extends React.Component {
                   headerColor="warning"
                   tabs={[
                     {
-                      tabName: "Front-End",
+                      tabName: "Front",
                       tabIcon: DeveloperMode,
                       tabContent: (
                         <div>
@@ -65,7 +64,7 @@ class SectionTabs extends React.Component {
                       )
                     },
                     {
-                      tabName: "Utilities",
+                      tabName: "Tools",
                       tabIcon: Backup,
                       tabContent: (
                         <div>

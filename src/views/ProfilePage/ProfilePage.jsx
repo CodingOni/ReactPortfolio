@@ -6,14 +6,11 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 import AssignmentInd from "@material-ui/icons/AssignmentInd";
 import Rowing from "@material-ui/icons/Rowing";
-import Favorite from "@material-ui/icons/Favorite";
 // core components
-import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import NavPills from "components/NavPills/NavPills.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 import SectionTabs from "./Sections/SectionTabs.jsx";
@@ -25,7 +22,7 @@ import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.js
 
 class ProfilePage extends React.Component {
   render() {
-    const { classes, ...rest } = this.props;
+    const { classes,  } = this.props;
     const imageClasses = classNames(
       classes.imgRaised,
       classes.imgRoundedCircle,
@@ -33,15 +30,15 @@ class ProfilePage extends React.Component {
     );
     const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
     return (
-      <div >
+      <div>
         <SectionNavbars />
         <Parallax small filter image={require("assets/img/profile-bg.jpg")} />
-        <div  className={classNames(classes.main, classes.mainRaised)}>
+        <div className={classNames(classes.main, classes.mainRaised)}>
           <div>
             <div className={classes.container}>
-              <GridContainer >
-                <GridItem  xs={12} sm={12} md={6}>
-                  <div  className={classes.profile}>
+              <GridContainer>
+                <GridItem xs={12} sm={12} md={6}>
+                  <div className={classes.profile}>
                     <div>
                       <img
                         src={profile}
@@ -59,6 +56,8 @@ class ProfilePage extends React.Component {
                         justIcon
                         link
                         className={classes.margin5}
+                        title="StackOverflow"
+                        alt="StackOverflow"
                       >
                         <i className={"fab fa-stack-overflow"} />
                       </Button>
@@ -69,6 +68,8 @@ class ProfilePage extends React.Component {
                         justIcon
                         link
                         className={classes.margin5}
+                        title="LinkedIn"
+                        alt="LinkedIn"
                       >
                         <i className={"fab fa-linkedin"} />
                       </Button>
@@ -79,6 +80,8 @@ class ProfilePage extends React.Component {
                         justIcon
                         link
                         className={classes.margin5}
+                        title="GitHub"
+                        alt="GitHub"
                       >
                         <i className={"fab fa-github"} />
                       </Button>
@@ -89,6 +92,8 @@ class ProfilePage extends React.Component {
                         justIcon
                         link
                         className={classes.margin5}
+                        title="SoloLearn"
+                        alt="SoloLearn"
                       >
                         <i className={"fas fa-database"} />
                       </Button>
@@ -114,7 +119,7 @@ class ProfilePage extends React.Component {
                   a few years delv into machine learning.
                 </p>
               </div>
-              <GridContainer  justify="center">
+              <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
                   <NavPills
                     alignCenter

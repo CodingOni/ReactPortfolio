@@ -1,4 +1,6 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -133,26 +135,26 @@ class ProfilePage extends React.Component {
                         tabContent: (
                           <GridContainer justify="center">
                             <GridItem xs={12} sm={12} md={4}>
-                              <img
+                              <LazyLoadImage
                                 alt="Artificial Intelligence"
                                 src={
                                   "https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325374/Artificial_Intelligence_o3ft8u.jpg"
                                 }
                                 className={navImageClasses}
                               />
-                              <img
+                              <LazyLoadImage
                                 alt="Solar Energy"
                                 src="https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325515/SolarEnergy_cwwh86.jpg"
                                 className={navImageClasses}
                               />
                             </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
-                              <img
+                              <LazyLoadImage
                                 alt="3D Printing"
                                 src="https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325546/3dprinting_ssjgla.jpg"
                                 className={navImageClasses}
                               />
-                              <img
+                              <LazyLoadImage
                                 alt="Save the earth"
                                 src="https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325624/SaveEarth_m8nn1t.jpg"
                                 className={navImageClasses}
@@ -167,26 +169,26 @@ class ProfilePage extends React.Component {
                         tabContent: (
                           <GridContainer justify="center">
                             <GridItem xs={12} sm={12} md={4}>
-                              <img
+                              <LazyLoadImage
                                 alt="Working Out"
                                 src={
                                   "https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325723/WorkingOut_iftzl4.jpg"
                                 }
                                 className={navImageClasses}
                               />
-                              <img
+                              <LazyLoadImage
                                 alt="Festival"
                                 src="https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325726/Festival_gpe5da.jpg"
                                 className={navImageClasses}
                               />
                             </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
-                              <img
+                              <LazyLoadImage
                                 alt="LongBoarding"
                                 src="https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325720/LongBoarding_zg7liu.jpg"
                                 className={navImageClasses}
                               />
-                              <img
+                              <LazyLoadImage
                                 alt="OutDoors"
                                 src="https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325725/OutDoors_bzhtob.jpg"
                                 className={navImageClasses}
@@ -205,6 +207,7 @@ class ProfilePage extends React.Component {
         </div>
         <Footer />
       </div>
+      
     );
   }
 }

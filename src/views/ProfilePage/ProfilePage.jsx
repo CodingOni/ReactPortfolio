@@ -118,6 +118,8 @@ class ProfilePage extends React.Component {
                   learning more frameworks next I plan to learn back-end and in
                   a few years delv into machine learning.
                 </p>
+                <SectionTabs />
+
               </div>
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
@@ -189,6 +191,7 @@ class ProfilePage extends React.Component {
                                 src="https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325725/OutDoors_bzhtob.jpg"
                                 className={navImageClasses}
                               />
+                              
                             </GridItem>
                           </GridContainer>
                         )
@@ -196,7 +199,6 @@ class ProfilePage extends React.Component {
                     ]}
                   />
                 </GridItem>
-                <SectionTabs />
               </GridContainer>
             </div>
           </div>

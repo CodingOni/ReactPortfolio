@@ -4,7 +4,7 @@ const popoverStyles = {
     boxShadow:
       "0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)",
     lineHeight: "1.5em",
-    background: "#fff",
+    background: "#00acc1c7",
     border: "none",
     borderRadius: "3px",
     display: "block",
@@ -19,10 +19,12 @@ const popoverStyles = {
     letterSpacing: "normal",
     wordBreak: "normal",
     wordSpacing: "normal",
+    
     whiteSpace: "normal",
     lineBreak: "auto",
     fontSize: "0.875rem",
-    wordWrap: "break-word"
+    wordWrap: "break-word",
+    width: "30%"
   },
   popoverBottom: {
     marginTop: "5px"
@@ -40,7 +42,8 @@ const popoverStyles = {
   popoverBody: {
     padding: "10px 15px 15px",
     lineHeight: "1.4",
-    color: "#555"
+    color: "#555",
+    margin: "10px 10px 10px"
   }
 };
 

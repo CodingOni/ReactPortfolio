@@ -5,7 +5,6 @@ import Carousel from "react-slick";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Popover from "@material-ui/core/Popover";
 
-
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
@@ -32,7 +31,9 @@ class SectionCarousel extends React.Component {
       openLeft: false,
       openTop: false,
       openBottom: false,
-      openRight: false
+      openRight: false,
+      openTop2: false,
+      openTop3: false
     };
   }
 
@@ -97,22 +98,22 @@ class SectionCarousel extends React.Component {
                         buttonRef={node => {
                           this.anchorElTop = node;
                         }}
-                        onClick={() => this.handleClickButton("openTop")}
+                        onClick={() => this.handleClickButton("openBottom")}
                         color="info"
                         size="sm"
                         justIcon
                         round
                       >
-                        <i className="fas fa-file" />
+                        <i className="fas fa-info" />
                       </Button>
                       <Popover
                         classes={{
                           paper: classes.popover
                         }}
-                        open={this.state.openTop}
-                        anchorEl={this.anchorElTop}
+                        open={this.state.openBottom}
+                        anchorEl={this.anchorElBottom}
                         anchorReference={"anchorEl"}
-                        onClose={() => this.handleClosePopover("openTop")}
+                        onClose={() => this.handleClosePopover("openBottom")}
                         anchorOrigin={{
                           vertical: "top",
                           horizontal: "center"
@@ -123,16 +124,19 @@ class SectionCarousel extends React.Component {
                         }}
                       >
                         <h3 className={classes.popoverHeader}>
-                          Popover on top
+                          Power Pumps and Moves
                         </h3>
                         <div className={classes.popoverBody}>
-                          I noticed this website needed a rehaul. So we
-                          implement some new designs and update the overall
-                          overall feel of the site.I Gave it a more light and
-                          interactive feel. And catered to the clients needs to
-                          the teeth. This required alot of using the same
-                          components so i think the next time i do a blog like
-                          website i will use React.
+                          <p>
+                            {" "}
+                            I noticed this website needed a rehaul. So we
+                            implement some new designs and update the overall
+                            overall feel of the site.I Gave it a more light and
+                            interactive feel. And catered to the clients needs
+                            to the teeth. This required alot of using the same
+                            components so i think the next time i do a blog like
+                            website i will use React.
+                          </p>
                         </div>
                       </Popover>
                     </div>
@@ -170,22 +174,22 @@ class SectionCarousel extends React.Component {
                         buttonRef={node => {
                           this.anchorElTop = node;
                         }}
-                        onClick={() => this.handleClickButton("openTop")}
+                        onClick={() => this.handleClickButton("openLeft")}
                         color="info"
                         size="sm"
                         justIcon
                         round
                       >
-                        <i className="fas fa-file" />
+                        <i className="fas fa-info" />
                       </Button>
                       <Popover
                         classes={{
                           paper: classes.popover
                         }}
-                        open={this.state.openTop}
-                        anchorEl={this.anchorElTop}
+                        open={this.state.openLeft}
+                        anchorEl={this.anchorElLeft}
                         anchorReference={"anchorEl"}
-                        onClose={() => this.handleClosePopover("openTop")}
+                        onClose={() => this.handleClosePopover("openLeft")}
                         anchorOrigin={{
                           vertical: "top",
                           horizontal: "center"
@@ -195,11 +199,22 @@ class SectionCarousel extends React.Component {
                           horizontal: "center"
                         }}
                       >
-                        <h3 className={classes.popoverHeader}>
-                          Ash
-                        </h3>
+                        <h3 className={classes.popoverHeader}>2Uper</h3>
                         <div className={classes.popoverBody}>
-                         Pikachu
+                          <p>
+                            This site is a rework of a clients attempt at
+                            creating their website. The website looked like it
+                            was from the early 2,000's ran at a snail's pace and
+                            had a way to many pages, in fact, it is still up
+                            right now 2uper.com. I began with modernizing the
+                            website with a moving carousel and a shop button
+                            that grabs the attention of the user. Then I broke
+                            the pages down to two pages and a drop-down of shop
+                            classes. The less clicks the better. I also added a
+                            contact page so the client can be easily contacted
+                            and improved overall performance. The client is
+                            still gathering information for the store.
+                          </p>
                         </div>
                       </Popover>
                     </div>
@@ -238,22 +253,22 @@ class SectionCarousel extends React.Component {
                         buttonRef={node => {
                           this.anchorElTop = node;
                         }}
-                        onClick={() => this.handleClickButton("openTop")}
+                        onClick={() => this.handleClickButton("openRight")}
                         color="info"
                         size="sm"
                         justIcon
                         round
                       >
-                        <i className="fas fa-file" />
+                        <i className="fas fa-info" />
                       </Button>
                       <Popover
                         classes={{
                           paper: classes.popover
                         }}
-                        open={this.state.openTop}
-                        anchorEl={this.anchorElTop}
+                        open={this.state.openRight}
+                        anchorEl={this.anchorElRight}
                         anchorReference={"anchorEl"}
-                        onClose={() => this.handleClosePopover("openTop")}
+                        onClose={() => this.handleClosePopover("openRight")}
                         anchorOrigin={{
                           vertical: "top",
                           horizontal: "center"
@@ -263,11 +278,22 @@ class SectionCarousel extends React.Component {
                           horizontal: "center"
                         }}
                       >
-                        <h3 className={classes.popoverHeader}>
-                          Ash
-                        </h3>
+                        <h3 className={classes.popoverHeader}>PrecisionCutz</h3>
                         <div className={classes.popoverBody}>
-                          Pikachu
+                          <p>
+                            I noticed many local barbershops do no have websites
+                            in my area. So I decided to take advantage of this
+                            and create a simple website for new customers to see
+                            available barbers and easily book them. This site
+                            has a book me a button that would direct users to
+                            their Booksy profile to book an appointment from the
+                            first page customers can see the barbers experience
+                            and when they work. I also added a page that shows
+                            the pricing for each service with a brief
+                            description. Knowing this place is Hard to find I
+                            included a Google Map API that in two clicks from
+                            the homepage gives you directions to the barbershop
+                          </p>{" "}
                         </div>
                       </Popover>
                     </div>
@@ -311,7 +337,7 @@ class SectionCarousel extends React.Component {
                         justIcon
                         round
                       >
-                        <i className="fas fa-file" />
+                        <i className="fas fa-info" />
                       </Button>
                       <Popover
                         classes={{
@@ -330,11 +356,18 @@ class SectionCarousel extends React.Component {
                           horizontal: "center"
                         }}
                       >
-                        <h3 className={classes.popoverHeader}>
-                          Ash
-                        </h3>
+                        <h3 className={classes.popoverHeader}>MyCatharsis</h3>
                         <div className={classes.popoverBody}>
-                         Pikachu
+                          <p>
+                            This is a rework of a clients massage bussiness. She
+                            also attempted to create this site on her own using
+                            a third-party site. This site was clunky and
+                            unresponsive, with too many pages. My first step was
+                            making this site mobile responsive. And instead of
+                            their being a separate page for each service I was
+                            able to fit everything onto one simple screen with
+                            nothing further than a hover and a click away.
+                          </p>
                         </div>
                       </Popover>
                     </div>
@@ -372,22 +405,22 @@ class SectionCarousel extends React.Component {
                         buttonRef={node => {
                           this.anchorElTop = node;
                         }}
-                        onClick={() => this.handleClickButton("openTop")}
+                        onClick={() => this.handleClickButton("openTop2")}
                         color="info"
                         size="sm"
                         justIcon
                         round
                       >
-                        <i className="fas fa-file" />
+                        <i className="fas fa-info" />
                       </Button>
                       <Popover
                         classes={{
                           paper: classes.popover
                         }}
-                        open={this.state.openTop}
-                        anchorEl={this.anchorElTop}
+                        open={this.state.openTop2}
+                        anchorEl={this.anchorElTop22}
                         anchorReference={"anchorEl"}
-                        onClose={() => this.handleClosePopover("openTop")}
+                        onClose={() => this.handleClosePopover("openTop2")}
                         anchorOrigin={{
                           vertical: "top",
                           horizontal: "center"
@@ -397,10 +430,16 @@ class SectionCarousel extends React.Component {
                           horizontal: "center"
                         }}
                       >
-                        <h3 className={classes.popoverHeader}>
-                          Popover on top
-                        </h3>
-                        <div className={classes.popoverBody}>Pikachu</div>
+                        <h3 className={classes.popoverHeader}>bCalculator</h3>
+                        <div className={classes.popoverBody}>
+                          <p>
+                            Wanting to further my JavaScript knowledge I created
+                            a basic calculator that performs equations. I also
+                            made the keys accessible to the visually impaired
+                            this was very important to me because my grandfather
+                            is actually blind.
+                          </p>
+                        </div>
                       </Popover>
                     </div>
                   </div>
@@ -437,22 +476,22 @@ class SectionCarousel extends React.Component {
                         buttonRef={node => {
                           this.anchorElTop = node;
                         }}
-                        onClick={() => this.handleClickButton("openTop")}
+                        onClick={() => this.handleClickButton("openTop3")}
                         color="info"
                         size="sm"
                         justIcon
                         round
                       >
-                        <i className="fas fa-file" />
+                        <i className="fas fa-info" />
                       </Button>
                       <Popover
                         classes={{
                           paper: classes.popover
                         }}
-                        open={this.state.openTop}
-                        anchorEl={this.anchorElTop}
+                        open={this.state.openTop3}
+                        anchorEl={this.anchorElTop3}
                         anchorReference={"anchorEl"}
-                        onClose={() => this.handleClosePopover("openTop")}
+                        onClose={() => this.handleClosePopover("openTop3")}
                         anchorOrigin={{
                           vertical: "top",
                           horizontal: "center"
@@ -462,12 +501,15 @@ class SectionCarousel extends React.Component {
                           horizontal: "center"
                         }}
                       >
-                        <h3 className={classes.popoverHeader}>
-                          Popover on top
-                        </h3>
+                        <h3 className={classes.popoverHeader}>Four In a Row</h3>
                         <div className={classes.popoverBody}>
-                          Pikachu
-                          Pikachu
+                          <p>
+                            I wanted to strengthen my JavaScript skills with
+                            another game so I created a Four In a row game. Each
+                            player is assigned a color and the first to get four
+                            coins in a row win the game. The game uses arrow
+                            keys to function correctly.
+                          </p>
                         </div>
                       </Popover>
                     </div>

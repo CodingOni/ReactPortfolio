@@ -1,4 +1,6 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 // react component for creating beautiful carousel
 import Carousel from "react-slick";
 // @material-ui/core components
@@ -66,7 +68,7 @@ class SectionCarousel extends React.Component {
               <Card carousel>
                 <Carousel {...settings}>
                   <div>
-                    <img
+                    <LazyLoadImage
                       src={image1}
                       alt="First slide"
                       className="slick-image"
@@ -109,7 +111,6 @@ class SectionCarousel extends React.Component {
                       <Popover
                         classes={{
                           paper: classes.popover
-                        
                         }}
                         open={this.state.openBottom}
                         anchorEl={this.anchorElBottom}
@@ -143,7 +144,7 @@ class SectionCarousel extends React.Component {
                     </div>
                   </div>
                   <div>
-                    <img
+                    <LazyLoadImage
                       src={image2}
                       alt="First slide"
                       className="slick-image"
@@ -222,7 +223,7 @@ class SectionCarousel extends React.Component {
                   </div>
 
                   <div>
-                    <img
+                    <LazyLoadImage
                       src={image3}
                       alt="First slide"
                       className="slick-image"
@@ -300,7 +301,7 @@ class SectionCarousel extends React.Component {
                     </div>
                   </div>
                   <div>
-                    <img
+                    <LazyLoadImage
                       src={image4}
                       alt="First slide"
                       className="slick-image"
@@ -374,7 +375,7 @@ class SectionCarousel extends React.Component {
                     </div>
                   </div>
                   <div>
-                    <img
+                    <LazyLoadImage
                       src={image5}
                       alt="First slide"
                       className="slick-image"
@@ -445,7 +446,7 @@ class SectionCarousel extends React.Component {
                     </div>
                   </div>
                   <div>
-                    <img
+                    <LazyLoadImage
                       src={image6}
                       alt="First slide"
                       className="slick-image"

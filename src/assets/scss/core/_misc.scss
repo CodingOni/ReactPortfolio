@@ -1,6 +1,7 @@
 html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 body {
   font-size: 1rem;
@@ -357,6 +358,7 @@ img:hover{
 .width30{
   max-width: 30% !important;
 }
+
 
 
  @media (min-width: 960px) {

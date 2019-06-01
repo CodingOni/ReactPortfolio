@@ -1,5 +1,7 @@
 import React from "react";
 // nodejs library that concatenates classes
+import ScrollableAnchor from "react-scrollable-anchor";
+
 import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
@@ -18,7 +20,7 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 // Sections for this page
 import ProductSection from "./Sections/ProductSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
-import SectionCarousel  from "./Sections/SectionCarousel.jsx";
+import SectionCarousel from "./Sections/SectionCarousel.jsx";
 
 // eslint-disable-next-line
 const dashboardRoutes = [];
@@ -31,7 +33,7 @@ class LandingPage extends React.Component {
       <div>
         <SectionNavbars />
         <Parallax filter image={require("assets/img/landing-bg.jpg")}>
-          <div className={classes.container} >
+          <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
                 <h1 className={classes.title}>Tyrique Daniel</h1>
@@ -45,22 +47,16 @@ class LandingPage extends React.Component {
                 <Button
                   color="info"
                   size="lg"
-                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                  href="https://docs.google.com/document/d/1ivOH2F4jq1TPsEA20hX5XIXLQJvXdDLwrBFM7WMrkZY/edit?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <i className="fas fa-file" />
                   My Resume
                 </Button>
-                <Button
-                  color="info"
-                  size="lg"
-                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <Button color="info" size="lg">
                   <i className="fas fa-book" />
-                  Projects
+                  <a href="#Projects">Projects</a>
                 </Button>
               </GridItem>
             </GridContainer>
@@ -69,7 +65,9 @@ class LandingPage extends React.Component {
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
             <ProductSection />
-          <SectionCarousel />
+            <ScrollableAnchor id={"Projects"}>
+              <SectionCarousel />
+            </ScrollableAnchor>
             <WorkSection />
           </div>
         </div>

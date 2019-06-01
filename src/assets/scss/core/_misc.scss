@@ -348,10 +348,14 @@ img:hover{
   }
 }
 // More Info Background
-body > div:nth-child(11) > div.MuiPaper-root-54.MuiPaper-elevation8-64.MuiPaper-rounded-55.MuiPopover-paper-328,body > div:nth-child(12) > div.MuiPaper-root-54.MuiPaper-elevation8-64.MuiPaper-rounded-55.MuiPopover-paper-328
+.MuiPopover-paper-535,.MuiPaper-root-54.MuiPaper-elevation8-64.MuiPaper-rounded-55.MuiPopover-paper-328, .MuiPaper-root-54.MuiPaper-elevation8-64.MuiPaper-rounded-55.MuiPopover-paper-328,.MuiPaper-root-54.MuiPaper-elevation8-64.MuiPaper-rounded-55.MuiPopover-paper-328, .MuiPaper-root-54.MuiPaper-elevation8-64.MuiPaper-rounded-55.MuiPopover-paper-328,.MuiPopover-paper-537body > div:nth-child(11) > div.MuiPaper-root-54.MuiPaper-elevation8-64.MuiPaper-rounded-55.MuiPopover-paper-328,body > div:nth-child(12) > div.MuiPaper-root-54.MuiPaper-elevation8-64.MuiPaper-rounded-55.MuiPopover-paper-328
 {
   background-color: #00acc1c7;
 
+}
+
+.width30{
+  max-width: 30% !important;
 }
 
 
@@ -364,17 +368,17 @@ body > div:nth-child(11) > div.MuiPaper-root-54.MuiPaper-elevation8-64.MuiPaper-
         
     }
 
-    .MuiPaper-root-54.MuiPaper-elevation8-64.MuiPaper-rounded-55.MuiPopover-paper-328{
-      max-width: 30%;
+    .MuiPopover-paper-535,.MuiPaper-elevation8-64,.MuiPaper-root-54.MuiPaper-elevation8-64.MuiPaper-rounded-55.MuiPopover-paper-328,.MuiPaper-root-54.MuiPaper-elevation8-64.MuiPaper-rounded-55.MuiPopover-paper-328{
+      max-width: 30%!important;
+      background-color: #00acc1c7 !important;
     }
+    
     // Profile Image Container
-    .MuiGrid-item-220.MuiGrid-grid-xs-12-259.MuiGrid-grid-sm-12-273.MuiGrid-grid-md-6-281.GridItem-grid-316.undefined,#root > div > div.ProfilePage-main-561.ProfilePage-mainRaised-562 > div > div > div:nth-child(1) > div,#root > div > div.ProfilePage-main-951.ProfilePage-mainRaised-952 > div > div > div:nth-child(1) > div{
-      margin-left: 22%;
+    .profileDiv{
+      margin-left: 15% !important;
     }
   
-    #root > div > div > div > div > div > p {
-      text-align: left;
-  }
+  
   
    
     .scontainer{

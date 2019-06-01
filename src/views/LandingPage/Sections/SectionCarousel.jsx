@@ -109,6 +109,7 @@ class SectionCarousel extends React.Component {
                       <Popover
                         classes={{
                           paper: classes.popover
+                        
                         }}
                         open={this.state.openBottom}
                         anchorEl={this.anchorElBottom}

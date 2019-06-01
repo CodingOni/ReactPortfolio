@@ -36,8 +36,8 @@ class ProfilePage extends React.Component {
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div>
             <div className={classes.container}>
-              <GridContainer>
-                <GridItem xs={12} sm={12} md={6}>
+              <GridContainer className="profileDiv">
+                <GridItem className="profileDiv" xs={12} sm={12} md={6}>
                   <div className={classes.profile}>
                     <div>
                       <img

@@ -108,17 +108,16 @@ class ProfilePage extends React.Component {
                   I have always been a computer guy I remember inspecting
                   elements in middle school and changing some text and thinking
                   I hacked the school website. To then creating my own website
-                  with basic HTML and CSS in high school.I began going a bit
-                  deeper and changing game files increase my health or in game
+                  with basic HTML and CSS in high school. I began going a bit
+                  deeper and changing game files increase my health or in-game
                   currency for fun. From there I decided to go to college for
                   Computer Science where I studied languages like C++ and
                   learned how to think like a programmer. The ability to create
                   things you think of into a real space fascinates me. I love
-                  solving problems and being creative so programming is perfect
-                  fit. Aspects of programming it has always been a part of my
-                  life. Currently, I am learning more about React and next I
-                  plan to learn back-end in a few years dive into machine
-                  learning.
+                  solving problems and being creative so programming is a
+                  perfect fit. Aspects of programming hav always been a part of
+                  my life. Currently, I am learning more about React and next I
+                  plan to learn back-end in a few
                 </p>
                 <SectionTabs />
               </div>

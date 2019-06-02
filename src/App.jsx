@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useContext } from 'react';
 
 import { createBrowserHistory } from "history";
-import { Router, Route, Switch } from "react-router-dom";
+import {
+  Route,
+  Switch,
+  Link,
+  __RouterContext,
+  BrowserRouter
+} from "react-router-dom";
+import ReactDOM from 'react-dom';
 
 import "assets/scss/material-kit-react.scss?v=1.4.0";
 
@@ -11,6 +18,7 @@ import ProfilePage from "views/ProfilePage/ProfilePage.jsx";
 import { css } from "@emotion/core";
 // First way to import
 import { ClipLoader } from "react-spinners";
+import { useTransition, animated } from "react-spring";
 
 const override = css`
   display: block;
@@ -19,30 +27,57 @@ const override = css`
 `;
 var hist = createBrowserHistory();
 
-export default class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      loading: false
-    };
-  }
-  render() {
-    return (
-      <>
-        <ClipLoader
-          css={override}
-          sizeUnit={"px"}
-          size={150}
-          color={"#123abc"}
-          loading={this.state.loading}
-        />
-        <Router history={hist}>
-          <Switch>
+function App() {
+  return (
+    <BrowserRouter>
+      <Home />
+    </BrowserRouter>
+  );
+}
+// pages for this product
+const LandingPage1 = () => {
+  return (
+    <div>
+      <LandingPage />
+    </div>
+  );
+};
+const ProfilePage1 = () => {
+  return (
+    <div>
+      <ProfilePage />
+    </div>
+  );
+};
+
+const Home = () => {
+  const { location } = useContext(__RouterContext);
+
+  const transitions = useTransition(location, location => location.pathname, {
+    from: {
+      position: "absolute",
+      width: "100%",
+      opacity: 0,
+      transform: "translate(100%,0)"
+    },
+    enter: { opacity: 1, transform: "translate(0%,0)" },
+    leave: { opacity: 0, transform: "translate(-50%,0)" }
+  });
+
+  return (
+    <>
+      {transitions.map(({ item, props, key }) => (
+        <animated.div key={key} style={props}>
+          <Switch location={item}>
             <Route path="/profile-page" component={ProfilePage} />
             <Route path="/" component={LandingPage} />
           </Switch>
-        </Router>
-      </>
-    );
-  }
-}
+        </animated.div>
+      ))}
+    </>
+  );
+};
+
+ReactDOM.render(<App />, document.getElementById("root"));
+
+export default App;

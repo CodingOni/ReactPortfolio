@@ -52,7 +52,7 @@ const Home = () => {
       position: "absolute",
       width: "100%",
       opacity: 0,
-      transform: "translate(100%,0)"
+      transform: "translate(0,100%)"
     },
     enter: { opacity: 1, transform: "translate(0%,0)" },
     leave: { opacity: 0, transform: "translate(-50%,0)" }

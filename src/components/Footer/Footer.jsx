@@ -82,7 +82,7 @@ function Footer({ ...props }) {
           &copy; {1900 + new Date().getYear()} CodingOni
           <Button
                         color= "info"
-                        href="https://www.sololearn.com/User/Edit"
+                        href="https://github.com/CodingOni/ReactPortfolio"
                         target="_blank"
                         rel="noopener noreferrer"
                         justIcon

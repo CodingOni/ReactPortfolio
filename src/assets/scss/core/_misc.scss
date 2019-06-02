@@ -139,7 +139,9 @@ form {
 .padding-left-0{
   padding-left: 0;
 }
-
+.jss316{
+  padding:0;
+}
 
 li .NavLink3:hover{
   color: #ff9800 !important
@@ -150,6 +152,9 @@ li .NavLink2:hover{
   color: #00acc1 !important
 }
 
+div > div.jss361.jss362 > div > div > div.jss350 > p{
+  margin-bottom: 20px;
+}
 
 img:hover{
   -webkit-animation: kenburns-top 50s ease-out both;

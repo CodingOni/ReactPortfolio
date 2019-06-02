@@ -24,7 +24,7 @@ import profilePageStyle from "assets/jss/material-kit-react/views/profilePage.js
 
 class ProfilePage extends React.Component {
   render() {
-    const { classes,  } = this.props;
+    const { classes } = this.props;
     const imageClasses = classNames(
       classes.imgRaised,
       classes.imgRoundedCircle,
@@ -105,23 +105,22 @@ class ProfilePage extends React.Component {
               </GridContainer>
               <div className={classes.description}>
                 <p>
-                  Hello, and thank you for visiting my website. I have always
-                  been a computer guy I remember inspecting elements in middle
-                  school and changing some text and thinking I hacked the school
-                  website. To then creating my own website with basic HTML and
-                  CSS in high school. From there I decided to go to college for
+                  I have always been a computer guy I remember inspecting
+                  elements in middle school and changing some text and thinking
+                  I hacked the school website. To then creating my own website
+                  with basic HTML and CSS in high school.I began going a bit
+                  deeper and changing game files increase my health or in game
+                  currency for fun. From there I decided to go to college for
                   Computer Science where I studied languages like C++ and
-                  learned how to think like a programmer.
-                  <a href="#pablo">links</a> for people to be able to follow
-                  them outside the site. The ability to create things you think
-                  of into a real space fascinates me. I love solving problems
-                  and being creative so programming is perfect for me it seems
-                  as it has always been a part of my life. Currently, I am
-                  learning more frameworks next I plan to learn back-end and in
-                  a few years delv into machine learning.
+                  learned how to think like a programmer. The ability to create
+                  things you think of into a real space fascinates me. I love
+                  solving problems and being creative so programming is perfect
+                  fit. Aspects of programming it has always been a part of my
+                  life. Currently, I am learning more about React and next I
+                  plan to learn back-end in a few years dive into machine
+                  learning.
                 </p>
                 <SectionTabs />
-
               </div>
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
@@ -193,7 +192,6 @@ class ProfilePage extends React.Component {
                                 src="https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325725/OutDoors_bzhtob.jpg"
                                 className={navImageClasses}
                               />
-                              
                             </GridItem>
                           </GridContainer>
                         )
@@ -207,7 +205,6 @@ class ProfilePage extends React.Component {
         </div>
         <Footer />
       </div>
-      
     );
   }
 }

@@ -133,11 +133,12 @@ class SectionCarousel extends React.Component {
                             {" "}
                             I noticed this website needed a rehaul. So we
                             implement some new designs and update the overall
-                            overall feel of the site.I Gave it a more light and
-                            interactive feel. And catered to the clients needs
-                            to the teeth. This required alot of using the same
-                            components so i think the next time i do a blog like
-                            website i will use React.
+                            feel of the site. I Gave it a more light and
+                            interactive feel. Catering to the clients needs to
+                            the teeth. This required a lot of using the same
+                            components so I think the next time I do a blog like
+                            a website I will use React. Written in HTML5, CSS3,
+                            JavaScript and Bootstrap4.
                           </p>
                         </div>
                       </Popover>
@@ -204,18 +205,19 @@ class SectionCarousel extends React.Component {
                         <h3 className={classes.popoverHeader}>2Uper</h3>
                         <div className={classes.popoverBody}>
                           <p>
-                            This site is a rework of a clients attempt at
-                            creating their website. The website looked like it
-                            was from the early 2,000's ran at a snail's pace and
-                            had a way to many pages, in fact, it is still up
-                            right now 2uper.com. I began with modernizing the
-                            website with a moving carousel and a shop button
-                            that grabs the attention of the user. Then I broke
-                            the pages down to two pages and a drop-down of shop
-                            classes. The less clicks the better. I also added a
-                            contact page so the client can be easily contacted
-                            and improved overall performance. The client is
-                            still gathering information for the store.
+                            I noticed many local barbershops do no have websites
+                            in my area. So I decided to take advantage of this
+                            and create a simple website for new customers to see
+                            available barbers and easily book them. This site
+                            has a book me a button that would direct users to
+                            their Booksy profile to book an appointment from the
+                            first page customers can see the barbers experience
+                            and when they work. I also added a page that shows
+                            the pricing for each service with a brief
+                            description. Knowing this place is Hard to find I
+                            included a Google Map API that in oneclick from the
+                            homepage gives you directions to the barbershop.
+                            Written with HTML5, CSS3 and BootStrap4
                           </p>
                         </div>
                       </Popover>
@@ -293,8 +295,9 @@ class SectionCarousel extends React.Component {
                             and when they work. I also added a page that shows
                             the pricing for each service with a brief
                             description. Knowing this place is Hard to find I
-                            included a Google Map API that in two clicks from
-                            the homepage gives you directions to the barbershop
+                            included a Google Map API that in oneclick from the
+                            homepage gives you directions to the barbershop.
+                            Written with HTML5, CSS3 and BootStrap4.
                           </p>{" "}
                         </div>
                       </Popover>
@@ -361,14 +364,15 @@ class SectionCarousel extends React.Component {
                         <h3 className={classes.popoverHeader}>MyCatharsis</h3>
                         <div className={classes.popoverBody}>
                           <p>
-                            This is a rework of a clients massage bussiness. She
-                            also attempted to create this site on her own using
-                            a third-party site. This site was clunky and
-                            unresponsive, with too many pages. My first step was
-                            making this site mobile responsive. And instead of
-                            their being a separate page for each service I was
-                            able to fit everything onto one simple screen with
-                            nothing further than a hover and a click away.
+                            This is a rework of a clients massage business. She
+                            attempted to create this site on her own using a
+                            third-party site. This site was clunky , was not
+                            optimized for mobile phones and had way too many
+                            pages. My first step was making this site mobile
+                            responsive. And instead of their being a separate
+                            page for each service I was able to fit everything
+                            onto one simple screen with nothing further than a
+                            hover and a click away. Written with HTML5 and CSS3
                           </p>
                         </div>
                       </Popover>
@@ -439,7 +443,8 @@ class SectionCarousel extends React.Component {
                             a basic calculator that performs equations. I also
                             made the keys accessible to the visually impaired
                             this was very important to me because my grandfather
-                            is actually blind.
+                            is actually blind. Written with CSS3, HTML5 and
+                            Javascript.
                           </p>
                         </div>
                       </Popover>
@@ -506,11 +511,11 @@ class SectionCarousel extends React.Component {
                         <h3 className={classes.popoverHeader}>Four In a Row</h3>
                         <div className={classes.popoverBody}>
                           <p>
-                            I wanted to strengthen my JavaScript skills with
+                          I wanted to strengthen my JavaScript skills with
                             another game so I created a Four In a row game. Each
                             player is assigned a color and the first to get four
                             coins in a row win the game. The game uses arrow
-                            keys to function correctly.
+                            keys to function correctly. Written with HTML5, CSS3 and Javascript
                           </p>
                         </div>
                       </Popover>

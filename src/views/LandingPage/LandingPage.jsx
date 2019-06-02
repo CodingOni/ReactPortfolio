@@ -38,10 +38,10 @@ class LandingPage extends React.Component {
               <GridItem xs={12} sm={12} md={6}>
                 <h1 className={classes.title}>Tyrique Daniel</h1>
                 <h4>
-                  I'm a Front-End Developer currently looking for work and
-                  willing to relocate. I have serious passion for UI effects,
-                  animations and creating intuitive, dynamic user experiences.
-                  Let's make something special.
+                  I'm a Front-End Developer currently looking to join a new team
+                  and willing to relocate. I have serious passion for UI
+                  effects, animations and creating intuitive, dynamic user
+                  experiences. Let's make something special.
                 </h4>
                 <br />
                 <Button

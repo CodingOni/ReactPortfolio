@@ -44,7 +44,7 @@ class ProductSection extends React.Component {
             >
               <InfoArea
                 title="Responsive & Intuitive"
-                description="My layouts will work well on all screens big or small and atr intuitive UX/UI making navigation seamless"
+                description="My layouts will work well on all screens big or small and are intuitive UX/UI making navigation seamless"
                 icon={ImportantDevices}
                 iconColor="success"
                 vertical

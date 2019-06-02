@@ -1,30 +1,22 @@
-import React, { useContext } from 'react';
-
+import React, { useContext } from "react";
 import { createBrowserHistory } from "history";
 import {
   Route,
   Switch,
-  Link,
-  __RouterContext,
+    __RouterContext,
   BrowserRouter
 } from "react-router-dom";
-import ReactDOM from 'react-dom';
+import ReactDOM from "react-dom";
 
 import "assets/scss/material-kit-react.scss?v=1.4.0";
 
 // pages for this product
 import LandingPage from "views/LandingPage/LandingPage.jsx";
 import ProfilePage from "views/ProfilePage/ProfilePage.jsx";
-import { css } from "@emotion/core";
+
 // First way to import
-import { ClipLoader } from "react-spinners";
 import { useTransition, animated } from "react-spring";
 
-const override = css`
-  display: block;
-  margin: 0 auto;
-  border-color: red;
-`;
 var hist = createBrowserHistory();
 
 function App() {
@@ -34,6 +26,7 @@ function App() {
     </BrowserRouter>
   );
 }
+// eslint-disable-next-line to
 // pages for this product
 const LandingPage1 = () => {
   return (
@@ -42,6 +35,7 @@ const LandingPage1 = () => {
     </div>
   );
 };
+// eslint-disable-next-line to
 const ProfilePage1 = () => {
   return (
     <div>

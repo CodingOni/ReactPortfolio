@@ -82,6 +82,7 @@ class SectionCarousel extends React.Component {
                         href="https://github.com/CodingOni/Blog-SiteW"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="Open"
                       >
                         <i className="fas fa-code" />
                       </Button>
@@ -93,6 +94,7 @@ class SectionCarousel extends React.Component {
                         href="https://codingoni.github.io/Blog-SiteW/"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="open"
                       >
                         <i className="fas fa-eye" />
                       </Button>
@@ -126,7 +128,7 @@ class SectionCarousel extends React.Component {
                         }}
                       >
                         <h3 className={classes.popoverHeader}>
-                          Power Pumps and Moves
+                          Power Moves and Pumps
                         </h3>
                         <div className={classes.popoverBody}>
                           <p>

@@ -139,7 +139,7 @@ form {
 .padding-left-0{
   padding-left: 0;
 }
-.jss316,.jss697,#root > div > div > div.jss643.jss644 > div > div{
+.jss316,.jss316,.jss697,#root > div > div > div.jss643.jss644 > div > div{
   padding:0;
 }
 
@@ -237,6 +237,10 @@ img:hover{
   
   .slick-caption{
     display: block !important;
+  }
+
+  .slick-image{
+    height: 200px;
   }
   
   i.fas,i.fab{
@@ -399,6 +403,10 @@ img:hover{
         flex-basis: 33.333333%;
         width: 50% !important;
         
+    }
+
+    .slick-image{
+      height: 100%;
     }
 
     .MuiPopover-paper,.MuiPopover-paper-551,.MuiPopover-paper-1733,.MuiPopover-paper-535,.MuiPaper-elevation8-64,.MuiPaper-root-54.MuiPaper-elevation8-64.MuiPaper-rounded-55.MuiPopover-paper-328,.MuiPaper-root-54.MuiPaper-elevation8-64.MuiPaper-rounded-55.MuiPopover-paper-328{

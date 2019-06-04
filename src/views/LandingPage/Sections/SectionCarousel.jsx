@@ -464,7 +464,7 @@ class SectionCarousel extends React.Component {
                         size="sm"
                         justIcon
                         round
-                        href="https://github.com/CodingOni/FourInARowGame"
+                        href="https://github.com/CodingOni/Tools"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -475,7 +475,7 @@ class SectionCarousel extends React.Component {
                         size="sm"
                         justIcon
                         round
-                        href="https://codingoni.github.io/FourInARowGame/"
+                        href="https://drive.google.com/file/d/1T8LRanlw1vFLVGyM6OGczSjLkSaCF-EM/view"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -510,14 +510,19 @@ class SectionCarousel extends React.Component {
                           horizontal: "center"
                         }}
                       >
-                        <h3 className={classes.popoverHeader}>Four In a Row</h3>
+                        <h3 className={classes.popoverHeader}>
+                          InstaGram Automation
+                        </h3>
                         <div className={classes.popoverBody}>
                           <p>
-                          I wanted to strengthen my JavaScript skills with
-                            another game so I created a Four In a row game. Each
-                            player is assigned a color and the first to get four
-                            coins in a row win the game. The game uses arrow
-                            keys to function correctly. Written with HTML5, CSS3 and Javascript
+                          Wanting to automate my workflow and practice some
+                            DOM manipulation, I created this Bot that likes
+                            posts and can be extended to follow people as well.
+                            I had a blast making this and troubleshooting it. I
+                            became disappointed as I learned I could not
+                            navigate web pages with Chrome Dev Tools, but i
+                            developed some other features if I somehow found a
+                            way to do this.
                           </p>
                         </div>
                       </Popover>

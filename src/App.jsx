@@ -16,7 +16,7 @@ import ProfilePage from "views/ProfilePage/ProfilePage.jsx";
 
 // First way to import
 import { useTransition, animated } from "react-spring";
-
+// eslint-disable-next-line to
 var hist = createBrowserHistory();
 
 function App() {
@@ -26,8 +26,8 @@ function App() {
     </BrowserRouter>
   );
 }
-// eslint-disable-next-line to
 // pages for this product
+// eslint-disable-next-line to
 const LandingPage1 = () => {
   return (
     <div>

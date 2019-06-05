@@ -16,7 +16,7 @@ import image1 from "assets/img/bg.jpg";
 import image2 from "assets/img/bg2.jpg";
 import image3 from "assets/img/bg3.jpg";
 import image4 from "assets/img/bg4.jpg";
-import image5 from "assets/img/bg5.jpg";
+import image5 from "assets/img/bg5.gif";
 import image6 from "assets/img/bg6.jpg";
 
 import Button from "components/CustomButtons/Button.jsx";
@@ -393,6 +393,7 @@ class SectionCarousel extends React.Component {
                         justIcon
                         round
                         target="_blank"
+                        href="https://github.com/CodingOni/VoiceRecBot"
                         rel="noopener noreferrer"
                       >
                         <i className="fas fa-code" />
@@ -403,7 +404,7 @@ class SectionCarousel extends React.Component {
                         size="sm"
                         justIcon
                         round
-                        href="https://codingoni.github.io/bCalculator/calc.html"
+                        href=" https://codingoni.github.io/VoiceRecBot/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -438,15 +439,19 @@ class SectionCarousel extends React.Component {
                           horizontal: "center"
                         }}
                       >
-                        <h3 className={classes.popoverHeader}>bCalculator</h3>
+                        <h3 className={classes.popoverHeader}>Jeffrey</h3>
                         <div className={classes.popoverBody}>
                           <p>
-                            Wanting to further my JavaScript knowledge I created
-                            a basic calculator that performs equations. I also
-                            made the keys accessible to the visually impaired
-                            this was very important to me because my grandfather
-                            is actually blind. Written with CSS3, HTML5 and
-                            Javascript.
+                            I came across this cool feature on Mozilla Developer
+                            netework. It allows you to access someones
+                            microphone through the browser and have a voice
+                            respond to what you say. I thought this was cool and
+                            it would be useful i could somehow put this into a
+                            smaller device for blind people in my family to save
+                            information, get the time weather and google
+                            results. This Site Uses HTML CSS JavaScript and
+                            Bootstrap.This is experimental and may not work on
+                            all browsers.
                           </p>
                         </div>
                       </Popover>
@@ -515,7 +520,7 @@ class SectionCarousel extends React.Component {
                         </h3>
                         <div className={classes.popoverBody}>
                           <p>
-                          Wanting to automate my workflow and practice some
+                            Wanting to automate my workflow and practice some
                             DOM manipulation, I created this Bot that likes
                             posts and can be extended to follow people as well.
                             I had a blast making this and troubleshooting it. I

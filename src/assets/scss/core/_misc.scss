@@ -144,12 +144,13 @@ form {
 }
 
 li .NavLink3:hover{
-  color: #ff9800 !important
+  color: #00acc1 !important;
   
 }
 
 li .NavLink2:hover{
-  color: #00acc1 !important
+  
+ color: #ff9800 !important;
 }
 
 div > div.jss361.jss362 > div > div > div.jss350 > p{
@@ -437,3 +438,39 @@ img:hover{
     
     }
     }
+    #root > div > div > a > header > div.MuiToolbar-root.MuiToolbar-regular.MuiToolbar-gutters.Header-container-44 > div.Header-flex-45 > button > span.MuiButton-label,#root > div > div > a > header > div.MuiToolbar-root.MuiToolbar-regular.MuiToolbar-gutters.Header-container-31 > div.Header-flex-32 > button > span.MuiButton-label{
+  -webkit-animation: color-change 1s infinite; 
+  -moz-animation: color-change 1s infinite;
+  -o-animation: color-change 1s infinite;
+  -ms-animation: color-change 1s infinite;
+  animation-iteration-count: 5;
+  animation-delay: 5s;
+
+
+ }
+
+    @-webkit-keyframes color-change {
+      0% { color: orange; }
+      50% { color: #00acc1; }
+      100% { color: orange; }
+  }
+  @-moz-keyframes color-change {
+      0% { color: orange; }
+      50% { color: #00acc1; }
+      100% { color: orange; }
+  }
+  @-ms-keyframes color-change {
+      0% { color: orange; }
+      50% { color: #00acc1; }
+      100% { color: orange; }
+  }
+  @-o-keyframes color-change {
+      0% { color: orange; }
+      50% { color: #00acc1; }
+      100% { color: orange; }
+  }
+  @keyframes color-change {
+      0% { color: orange; }
+      50% { color: #00acc1; }
+      100% { color: orange; }
+  }

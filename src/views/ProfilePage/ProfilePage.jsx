@@ -115,9 +115,9 @@ class ProfilePage extends React.Component {
                   learned how to think like a programmer. The ability to create
                   things you think of into a real space fascinates me. I love
                   solving problems and being creative so programming is a
-                  perfect fit. Aspects of programming hav always been a part of
-                  my life. Currently, I am learning more about React and next I
-                  plan to learn back-end in a few
+                  perfect fit. Aspects of programming have always been a part of
+                  my life. Currently, I am learning more about React and next, I
+                  plan to Express.
                 </p>
                 <SectionTabs />
               </div>

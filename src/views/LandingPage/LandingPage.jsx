@@ -67,9 +67,9 @@ class LandingPage extends React.Component {
           <div className={classes.container}>
             <ProductSection />
             <ScrollableAnchor id={"Projects"}>
-              <Fade>
+             
                 <SectionCarousel />
-              </Fade>
+        
             </ScrollableAnchor>
             <WorkSection />
           </div>

@@ -13,9 +13,9 @@ import GridItem from "components/Grid/GridItem.jsx";
 import Card from "components/Card/Card.jsx";
 import carouselStyle from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.jsx";
 import image1 from "assets/img/bg.jpg";
-import image2 from "assets/img/bg2.jpg";
-import image3 from "assets/img/bg3.jpg";
-import image4 from "assets/img/bg4.jpg";
+import image2 from "assets/img/bg2.png";
+import image3 from "assets/img/bg3.png";
+import image4 from "assets/img/bg4.png";
 import image5 from "assets/img/bg5.gif";
 import image6 from "assets/img/bg6.jpg";
 
@@ -150,7 +150,7 @@ class SectionCarousel extends React.Component {
                     <LazyLoadImage
                       src={image2}
                       alt="First slide"
-                      className="slick-image"
+                      className="slick-image img-fluid"
                     />
                     <div className="slick-caption">
                       <Button
@@ -158,7 +158,7 @@ class SectionCarousel extends React.Component {
                         size="sm"
                         justIcon
                         round
-                        href="https://github.com/CodingOni/2uper"
+                        href="https://github.com/CodingOni/Ecommerce-Store"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -169,7 +169,7 @@ class SectionCarousel extends React.Component {
                         size="sm"
                         justIcon
                         round
-                        href="https://codingoni.github.io/2uper/"
+                        href="https://e-spot.netlify.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >

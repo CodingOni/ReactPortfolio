@@ -32,12 +32,12 @@ class ProfilePage extends React.Component {
     );
     const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
     return (
-      <GridItem>
+      <div>
         <SectionNavbars />
         <Parallax small filter image={require("assets/img/profile-bg.jpg")} />
-        <GridItem className={classNames(classes.main, classes.mainRaised)}>
-          <GridItem>
-            <GridItem className={classes.container}>
+        <div className={classNames(classes.main, classes.mainRaised)}>
+          <div>
+            <div className={classes.container}>
               <GridContainer className="profileDiv">
                 <GridItem className="profileDiv" xs={12} sm={12} md={6}>
                   <div className={classes.profile}>
@@ -133,44 +133,30 @@ class ProfilePage extends React.Component {
                         tabContent: (
                           <GridContainer justify="center">
                             <GridItem xs={12} sm={12} md={4}>
-                              <div className="container">
-                                <LazyLoadImage
-                                  alt="Artificial Intelligence"
-                                  src={
-                                    "https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325374/Artificial_Intelligence_o3ft8u.jpg"
-                                  }
-                                  className={navImageClasses}
-                                />
-                                <div className="centered">
-                                  Artificial Intelligence
-                                </div>
-                              </div>
-                              <div className="container">
-                                <LazyLoadImage
-                                  alt="Solar Energy"
-                                  src="https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325515/SolarEnergy_cwwh86.jpg"
-                                  className={navImageClasses}
-                                />
-                                <div className="centered">Solar Energy</div>
-                              </div>
+                              <LazyLoadImage
+                                alt="Artificial Intelligence"
+                                src={
+                                  "https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325374/Artificial_Intelligence_o3ft8u.jpg"
+                                }
+                                className={navImageClasses}
+                              />
+                              <LazyLoadImage
+                                alt="Solar Energy"
+                                src="https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325515/SolarEnergy_cwwh86.jpg"
+                                className={navImageClasses}
+                              />
                             </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
-                              <div className="container">
-                                <LazyLoadImage
-                                  alt="3D Printing"
-                                  src="https://res.cloudinary.com/dvqyek3sb/image/upload/v1561347736/photo-1518732714860-b62714ce0c59_1_dyjswu.jpg"
-                                  className={navImageClasses}
-                                />
-                                <div className="centered">3D Printing</div>
-                              </div>
-                              <div className="container">
-                                <LazyLoadImage
-                                  alt="Save the earth"
-                                  src="https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325624/SaveEarth_m8nn1t.jpg"
-                                  className={navImageClasses}
-                                />
-                                <div className="centered">Global Warming</div>
-                              </div>
+                              <LazyLoadImage
+                                alt="3D Printing"
+                                src="https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325546/3dprinting_ssjgla.jpg"
+                                className={navImageClasses}
+                              />
+                              <LazyLoadImage
+                                alt="Save the earth"
+                                src="https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325624/SaveEarth_m8nn1t.jpg"
+                                className={navImageClasses}
+                              />
                             </GridItem>
                           </GridContainer>
                         )
@@ -181,42 +167,30 @@ class ProfilePage extends React.Component {
                         tabContent: (
                           <GridContainer justify="center">
                             <GridItem xs={12} sm={12} md={4}>
-                              <div className="container">
-                                <LazyLoadImage
-                                  alt="Working Out"
-                                  src={
-                                    "https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325723/WorkingOut_iftzl4.jpg"
-                                  }
-                                  className={navImageClasses}
-                                />
-                                <div className="centered">Working Out</div>
-                              </div>
-                              <div className="container">
-                                <LazyLoadImage
-                                  alt="Festival"
-                                  src="https://res.cloudinary.com/dvqyek3sb/image/upload/v1561347880/photo-1470229722913-7c0e2dbbafd3_mxalai.jpg"
-                                  className={navImageClasses}
-                                />
-                                <div className="centered">Concerts</div>
-                              </div>
+                              <LazyLoadImage
+                                alt="Working Out"
+                                src={
+                                  "https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325723/WorkingOut_iftzl4.jpg"
+                                }
+                                className={navImageClasses}
+                              />
+                              <LazyLoadImage
+                                alt="Festival"
+                                src="https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325726/Festival_gpe5da.jpg"
+                                className={navImageClasses}
+                              />
                             </GridItem>
                             <GridItem xs={12} sm={12} md={4}>
-                              <div className="container">
-                                <LazyLoadImage
-                                  alt="LongBoarding"
-                                  src="https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325720/LongBoarding_zg7liu.jpg"
-                                  className={navImageClasses}
-                                />
-                                <div className="centered">Longboarding</div>
-                              </div>
-                              <div className="container">
-                                <LazyLoadImage
-                                  alt="OutDoors"
-                                  src="https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325725/OutDoors_bzhtob.jpg"
-                                  className={navImageClasses}
-                                />
-                                <div className="centered">Meditation</div>
-                              </div>
+                              <LazyLoadImage
+                                alt="LongBoarding"
+                                src="https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325720/LongBoarding_zg7liu.jpg"
+                                className={navImageClasses}
+                              />
+                              <LazyLoadImage
+                                alt="OutDoors"
+                                src="https://res.cloudinary.com/dvqyek3sb/image/upload/v1559325725/OutDoors_bzhtob.jpg"
+                                className={navImageClasses}
+                              />
                             </GridItem>
                           </GridContainer>
                         )
@@ -225,11 +199,11 @@ class ProfilePage extends React.Component {
                   />
                 </GridItem>
               </GridContainer>
-            </GridItem>
-          </GridItem>
-        </GridItem>
+            </div>
+          </div>
+        </div>
         <Footer />
-      </GridItem>
+      </div>
     );
   }
 }

@@ -273,7 +273,28 @@ img:hover{
 
 }
 
+.centered {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     -webkit-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
+     color: white;
+     font-weight: 1000;
+     padding: 10px;
+     background: #ffa500b3;
+     font-family: "Roboto",
+     "Helvetica",
+     "Arial",
+     sans-serif;
+     border-radius: 0.5rem;
+}
 
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
 
 
 

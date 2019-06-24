@@ -1,6 +1,7 @@
 import React from "react";
 // nodejs library that concatenates classes
 import ScrollableAnchor from "react-scrollable-anchor";
+import Fade from "react-reveal/Fade";
 
 import classNames from "classnames";
 // @material-ui/core components
@@ -36,7 +37,7 @@ class LandingPage extends React.Component {
           <div className={classes.container}>
             <GridContainer>
               <GridItem xs={12} sm={12} md={6}>
-                <h1 className={classes.title}>Tyrique Daniel</h1>
+                <h1 className={classes.title}>Tyrique D. Daniel</h1>
                 <h4>
                   I'm a Front-End Developer currently looking to join a new team
                   and willing to relocate. I have serious passion for UI
@@ -66,7 +67,9 @@ class LandingPage extends React.Component {
           <div className={classes.container}>
             <ProductSection />
             <ScrollableAnchor id={"Projects"}>
-              <SectionCarousel />
+              <Fade>
+                <SectionCarousel />
+              </Fade>
             </ScrollableAnchor>
             <WorkSection />
           </div>

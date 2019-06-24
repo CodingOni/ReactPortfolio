@@ -3,7 +3,7 @@ import { createBrowserHistory } from "history";
 import {
   Route,
   Switch,
-    __RouterContext,
+  __RouterContext,
   BrowserRouter
 } from "react-router-dom";
 import ReactDOM from "react-dom";
@@ -13,6 +13,7 @@ import "assets/scss/material-kit-react.scss?v=1.4.0";
 // pages for this product
 import LandingPage from "views/LandingPage/LandingPage.jsx";
 import ProfilePage from "views/ProfilePage/ProfilePage.jsx";
+import SectionNavbars from "views/ProfilePage/Sections/SectionNavbars.jsx";
 
 // First way to import
 import { useTransition, animated } from "react-spring";
@@ -62,6 +63,7 @@ const Home = () => {
     <>
       {transitions.map(({ item, props, key }) => (
         <animated.div key={key} style={props}>
+         
           <Switch location={item}>
             <Route path="/profile-page" component={ProfilePage} />
             <Route path="/" component={LandingPage} />

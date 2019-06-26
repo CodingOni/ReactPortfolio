@@ -28,88 +28,87 @@ function Footer({ ...props }) {
       <div className={classes.container}>
         <div className={classes.left}>
           <List className={classes.list}>
-          <Button
-                        href="https://stackoverflow.com/users/11283278/codingoni"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        justIcon
-                        link
-                        className={classes.margin5}
-                        title="StackOverflow"
-                        alt="StackOverflow"
-                      >
-                        <i className={"fab fa-stack-overflow"} />
-                      </Button>
-                      <Button
-                        href="https://www.linkedin.com/in/tyrique-daniel-764586b5/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        justIcon
-                        link
-                        className={classes.margin5}
-                        title="LinkedIn"
-                        alt="LinkedIn"
-                      >
-                        <i className={"fab fa-linkedin"} />
-                      </Button>
-                      <Button
-                        href="https://github.com/CodingOni"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        justIcon
-                        link
-                        className={classes.margin5}
-                        title="GitHub"
-                        alt="GitHub"
-                      >
-                        <i className={"fab fa-github"} />
-                      </Button>
-                      <Button
-                        href="https://www.sololearn.com/User/Edit"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        justIcon
-                        link
-                        className={classes.margin5}
-                        title="SoloLearn"
-                        alt="SoloLearn"
-                      >
-                        <i className={"fas fa-database"} />
-                      </Button>
+            <Button
+              href="https://stackoverflow.com/users/11283278/codingoni"
+              target="_blank"
+              rel="noopener noreferrer"
+              justIcon
+              link
+              className={classes.margin5}
+              title="StackOverflow"
+              alt="StackOverflow"
+            >
+              <i className={"fab fa-stack-overflow"} />
+            </Button>
+            <Button
+              href="https://www.linkedin.com/in/tyrique-daniel-764586b5/"
+              target="_blank"
+              rel="noopener noreferrer"
+              justIcon
+              link
+              className={classes.margin5}
+              title="LinkedIn"
+              alt="LinkedIn"
+            >
+              <i className={"fab fa-linkedin"} />
+            </Button>
+            <Button
+              href="https://github.com/CodingOni"
+              target="_blank"
+              rel="noopener noreferrer"
+              justIcon
+              link
+              className={classes.margin5}
+              title="GitHub"
+              alt="GitHub"
+            >
+              <i className={"fab fa-github"} />
+            </Button>
+            <Button
+              href="https://www.sololearn.com/User/Edit"
+              target="_blank"
+              rel="noopener noreferrer"
+              justIcon
+              link
+              className={classes.margin5}
+              title="SoloLearn"
+              alt="SoloLearn"
+            >
+              <i className={"fas fa-database"} />
+            </Button>
           </List>
         </div>
         <div className={classes.right}>
           &copy; {1900 + new Date().getYear()} CodingOni
           <Button
-                        color= "info"
-                        href="https://github.com/CodingOni/ReactPortfolio"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        justIcon
-                        link
-                        className={classes.margin5}
-                        title="View This Sites Code"
-                        alt="View This Sites Code"
-                      >
-                        <i className="fas fa-code" />
-                      </Button>
-                      <Button
-                        color= "info"
-                        href="https://mail.google.com/mail/?view=cm&fs=1&to=tyriquedaniel14@gmail.com,tyrique1.daniel@gmail.com&su=Programming-Inquiry&body=BODY"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        justIcon
-                        link
-                        className={classes.margin5}
-                        title="Email me"
-                        alt="Email Me"
-                      >
-                      
-                        <i className="fas fa-envelope-square" />
-                        
-                      </Button>
-                      <span>Email me</span>
-         
+            color="info"
+            href="https://github.com/CodingOni/ReactPortfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+            justIcon
+            link
+            className={classes.margin5}
+            title="View This Sites Code"
+            alt="View This Sites Code"
+          >
+            <i className="fas fa-code" />
+          </Button>
+          <Button
+            color="info"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=tyriquedaniel14@gmail.com,tyrique1.daniel@gmail.com&su=Programming-Inquiry&body=BODY"
+            target="_blank"
+            rel="noopener noreferrer"
+            justIcon
+            link
+            className={classes.margin5}
+            title="Email me"
+            alt="Email Me"
+          >
+            <i className="fas fa-envelope-square" />
+          </Button>
+          <a className="text-black" href="https://mail.google.com/mail/?view=cm&fs=1&to=tyriquedaniel14@gmail.com,tyrique1.daniel@gmail.com&su=Programming-Inquiry&body=BODY">
+            Email Me
+          </a>
         </div>
       </div>
     </footer>

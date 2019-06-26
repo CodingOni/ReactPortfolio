@@ -104,8 +104,11 @@ function Footer({ ...props }) {
                         title="Email me"
                         alt="Email Me"
                       >
+                      
                         <i className="fas fa-envelope-square" />
+                        
                       </Button>
+                      <span>Email me</span>
          
         </div>
       </div>

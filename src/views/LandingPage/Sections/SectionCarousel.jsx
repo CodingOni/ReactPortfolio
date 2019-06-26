@@ -69,6 +69,86 @@ class SectionCarousel extends React.Component {
                 <Carousel {...settings}>
                   <div>
                     <LazyLoadImage
+                      src={image2}
+                      alt="First slide"
+                      className="slick-image img-fluid"
+                    />
+                    <div className="slick-caption">
+                      <Button
+                        color="info"
+                        size="sm"
+                        justIcon
+                        round
+                        href="https://github.com/CodingOni/Ecommerce-Store"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="fas fa-code" />
+                      </Button>
+                      <Button
+                        color="info"
+                        size="sm"
+                        justIcon
+                        round
+                        href="https://espot.netlify.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="fas fa-eye" />
+                      </Button>
+                      <Button
+                        buttonRef={node => {
+                          this.anchorElTop = node;
+                        }}
+                        onClick={() => this.handleClickButton("openLeft")}
+                        color="info"
+                        size="sm"
+                        justIcon
+                        round
+                      >
+                        <i className="fas fa-info" />
+                      </Button>
+                      <Popover
+                        classes={{
+                          paper: classes.popover
+                        }}
+                        open={this.state.openLeft}
+                        anchorEl={this.anchorElLeft}
+                        anchorReference={"anchorEl"}
+                        onClose={() => this.handleClosePopover("openLeft")}
+                        anchorOrigin={{
+                          vertical: "top",
+                          horizontal: "center"
+                        }}
+                        transformOrigin={{
+                          vertical: "bottom",
+                          horizontal: "center"
+                        }}
+                      >
+                        <h3 className={classes.popoverHeader}>ESpot</h3>
+                        <div className={classes.popoverBody}>
+                          <p>
+                            Wanting to test my skills and tenacity. I created a
+                            Fully functional E-commerce site with React.js. The
+                            site needed to have a modern and premium feel as to
+                            not to make customers feel uneasy. This site is
+                            dynamic and lightning fast with eye-catching
+                            animations and features like lazy-loading to save
+                            data and load speeds. Also to make Customers feel
+                            safe on our site I decided to use PayPal's API.
+                            E-Spot was a blast to make encountering problems I
+                            never encountered on a normal non-eccomerece site.
+                            Like having to use context API and using large
+                            amounts of data. To build this site I used
+                            React.JS,CSS, Styled-Components, Context Api, PayPal
+                            Api and Bootstrap 4.
+                          </p>
+                        </div>
+                      </Popover>
+                    </div>
+                  </div>
+                  <div>
+                    <LazyLoadImage
                       src={image1}
                       alt="First slide"
                       className="slick-image"
@@ -141,85 +221,6 @@ class SectionCarousel extends React.Component {
                             components so I think the next time I do a blog like
                             a website I will use React. Written in HTML5, CSS3,
                             JavaScript and Bootstrap4.
-                          </p>
-                        </div>
-                      </Popover>
-                    </div>
-                  </div>
-                  <div>
-                    <LazyLoadImage
-                      src={image2}
-                      alt="First slide"
-                      className="slick-image img-fluid"
-                    />
-                    <div className="slick-caption">
-                      <Button
-                        color="info"
-                        size="sm"
-                        justIcon
-                        round
-                        href="https://github.com/CodingOni/Ecommerce-Store"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <i className="fas fa-code" />
-                      </Button>
-                      <Button
-                        color="info"
-                        size="sm"
-                        justIcon
-                        round
-                        href="https://e-spot.netlify.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <i className="fas fa-eye" />
-                      </Button>
-                      <Button
-                        buttonRef={node => {
-                          this.anchorElTop = node;
-                        }}
-                        onClick={() => this.handleClickButton("openLeft")}
-                        color="info"
-                        size="sm"
-                        justIcon
-                        round
-                      >
-                        <i className="fas fa-info" />
-                      </Button>
-                      <Popover
-                        classes={{
-                          paper: classes.popover
-                        }}
-                        open={this.state.openLeft}
-                        anchorEl={this.anchorElLeft}
-                        anchorReference={"anchorEl"}
-                        onClose={() => this.handleClosePopover("openLeft")}
-                        anchorOrigin={{
-                          vertical: "top",
-                          horizontal: "center"
-                        }}
-                        transformOrigin={{
-                          vertical: "bottom",
-                          horizontal: "center"
-                        }}
-                      >
-                        <h3 className={classes.popoverHeader}>2Uper</h3>
-                        <div className={classes.popoverBody}>
-                          <p>
-                            I noticed many local barbershops do no have websites
-                            in my area. So I decided to take advantage of this
-                            and create a simple website for new customers to see
-                            available barbers and easily book them. This site
-                            has a book me a button that would direct users to
-                            their Booksy profile to book an appointment from the
-                            first page customers can see the barbers experience
-                            and when they work. I also added a page that shows
-                            the pricing for each service with a brief
-                            description. Knowing this place is Hard to find I
-                            included a Google Map API that in oneclick from the
-                            homepage gives you directions to the barbershop.
-                            Written with HTML5, CSS3 and BootStrap4
                           </p>
                         </div>
                       </Popover>

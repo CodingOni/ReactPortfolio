@@ -48,7 +48,7 @@ class LandingPage extends React.Component {
                 <Button
                   color="info"
                   size="lg"
-                  href="https://drive.google.com/file/d/1J0finErDJcBhRjMh3PF_VVQ4O9HQ4gR4/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1XPHhxKoXV6E6pvA80lgS0fnfLfArJ3Y8/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

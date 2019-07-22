@@ -90,7 +90,7 @@ class SectionCarousel extends React.Component {
                         size="sm"
                         justIcon
                         round
-                        href="https://espot.netlify.com/"
+                        href="https://VHuB.shop"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -136,7 +136,7 @@ class SectionCarousel extends React.Component {
                             animations and features like lazy-loading to save
                             data and load speeds. Also to make Customers feel
                             safe on our site I decided to use PayPal's API.
-                            E-Spot was a blast to make encountering problems I
+                            VHuB was a blast to make encountering problems I
                             never encountered on a normal non-eccomerece site.
                             Like having to use context API and using large
                             amounts of data. To build this site I used
